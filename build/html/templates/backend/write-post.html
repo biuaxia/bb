@@ -1,14 +1,6 @@
 {{define "content"}}
-<div class="typecho-head-nav clearfix" role="navigation">
-    <button class="menu-bar">菜单</button>
-    <nav id="typecho-nav-list">
-        <ul class="root"><li class="parent"><a href="http://bt.biuaxia.cn/admin/index.php">控制台</a></li><ul class="child"><li><a href="http://bt.biuaxia.cn/admin/index.php">概要</a></li><li><a href="http://bt.biuaxia.cn/admin/profile.php">个人设置</a></li><li><a href="http://bt.biuaxia.cn/admin/plugins.php">插件</a></li><li><a href="http://bt.biuaxia.cn/admin/themes.php">外观</a></li><li class="last"><a href="http://bt.biuaxia.cn/admin/backup.php">备份</a></li></ul></ul><ul class="root focus"><li class="parent"><a href="http://bt.biuaxia.cn/admin/write-post.php">撰写</a></li><ul class="child"><li class="focus"><a href="http://bt.biuaxia.cn/admin/write-post.php">撰写文章</a></li><li class="last"><a href="http://bt.biuaxia.cn/admin/write-page.php">创建页面</a></li></ul></ul><ul class="root"><li class="parent"><a href="http://bt.biuaxia.cn/admin/manage-posts.php">管理</a></li><ul class="child"><li><a href="http://bt.biuaxia.cn/admin/manage-posts.php">文章</a></li><li><a href="http://bt.biuaxia.cn/admin/manage-pages.php">独立页面</a></li><li><a href="http://bt.biuaxia.cn/admin/manage-comments.php">评论</a></li><li><a href="http://bt.biuaxia.cn/admin/manage-categories.php">分类</a></li><li><a href="http://bt.biuaxia.cn/admin/manage-tags.php">标签</a></li><li><a href="http://bt.biuaxia.cn/admin/manage-medias.php">文件</a></li><li class="last"><a href="http://bt.biuaxia.cn/admin/manage-users.php">用户</a></li></ul></ul><ul class="root"><li class="parent"><a href="http://bt.biuaxia.cn/admin/options-general.php">设置</a></li><ul class="child"><li><a href="http://bt.biuaxia.cn/admin/options-general.php">基本</a></li><li><a href="http://bt.biuaxia.cn/admin/options-discussion.php">评论</a></li><li><a href="http://bt.biuaxia.cn/admin/options-reading.php">阅读</a></li><li class="last"><a href="http://bt.biuaxia.cn/admin/options-permalink.php">永久链接</a></li></ul></ul>    </nav>
-    <div class="operate">
-        <a title="最后登录: 5月24日" href="http://bt.biuaxia.cn/admin/profile.php" class="author">biuaxia</a><a
-            class="exit" href="http://bt.biuaxia.cn/index.php/action/logout?_=148da8799e402241c2155c1bf623c085">登出</a><a
-            href="http://bt.biuaxia.cn/">网站</a>
-    </div>
-</div>
+
+{{include "layouts/menu"}}
 
 <div class="main">
     <div class="body container">
@@ -195,21 +187,7 @@
     </div>
 </div>
 
-<div class="typecho-foot" role="contentinfo">
-    <div class="copyright">
-        <a href="http://typecho.org" class="i-logo-s">Typecho</a>
-        <p>由 <a href="http://typecho.org">Typecho</a> 强力驱动, 版本 1.2.0</p>
-    </div>
-    <nav class="resource">
-        <a href="http://docs.typecho.org">帮助文档</a> &bull;
-        <a href="http://forum.typecho.org">支持论坛</a> &bull;
-        <a href="https://github.com/typecho/typecho/issues">报告错误</a> &bull;
-        <a href="http://typecho.org/download">资源下载</a>
-    </nav>
-</div>
-<script src="http://bt.biuaxia.cn/admin/js/jquery.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/jquery-ui.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/typecho.js?v=1.2.0"></script>
+{{include "layouts/foot"}}
 <script>
     (function () {
         $(document).ready(function() {
@@ -359,8 +337,8 @@
 })();
 </script>
 
-<script src="http://bt.biuaxia.cn/admin/js/timepicker.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/tokeninput.js?v=1.2.0"></script>
+<script src="/assets/admin/js/timepicker.js?v=1.2.0"></script>
+<script src="/assets/admin/js/tokeninput.js?v=1.2.0"></script>
 <script>
 $(document).ready(function() {
     // 日期时间控件
@@ -705,10 +683,10 @@ $(document).ready(function() {
 });
 </script>
 
-<script src="http://bt.biuaxia.cn/admin/js/hyperdown.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/pagedown.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/paste.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/purify.js?v=1.2.0"></script>
+<script src="/assets/admin/js/hyperdown.js?v=1.2.0"></script>
+<script src="/assets/admin/js/pagedown.js?v=1.2.0"></script>
+<script src="/assets/admin/js/paste.js?v=1.2.0"></script>
+<script src="/assets/admin/js/purify.js?v=1.2.0"></script>
 <script>
 $(document).ready(function () {
     var textarea = $('#text'),
@@ -944,8 +922,8 @@ $(document).ready(function () {
 </script>
 
 
-<script src="http://bt.biuaxia.cn/admin/js/moxie.js?v=1.2.0"></script>
-<script src="http://bt.biuaxia.cn/admin/js/plupload.js?v=1.2.0"></script>
+<script src="/assets/admin/js/moxie.js?v=1.2.0"></script>
+<script src="/assets/admin/js/plupload.js?v=1.2.0"></script>
 <script>
 $(document).ready(function() {
     function updateAttacmentNumber () {
@@ -1056,7 +1034,7 @@ $(document).ready(function() {
             browse_button   :   $('.upload-file').get(0),
             url             :   'http://bt.biuaxia.cn/index.php/action/upload?_=148da8799e402241c2155c1bf623c085',
             runtimes        :   'html5,flash,html4',
-            flash_swf_url   :   'http://bt.biuaxia.cn/admin/js/Moxie.swf?v=1.2.0',
+            flash_swf_url   :   '/assets/admin/js/Moxie.swf?v=1.2.0',
             drop_element    :   $('.upload-area').get(0),
             filters         :   {
                 max_file_size       :   '50mb',

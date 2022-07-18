@@ -1,0 +1,741 @@
+2022-07-18 15:55:57.907	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:55:57.908	INFO	support/context.go:71	Bean容器加载完成
+2022-07-18 15:56:16.473	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:56:16.473	INFO	support/context.go:71	Bean容器加载完成
+2022-07-18 15:56:25.821	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:56:25.822	INFO	support/context.go:71	Bean容器加载完成
+2022-07-18 15:57:18.650	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:57:18.650	INFO	support/context.go:71	Bean容器加载完成
+2022-07-18 15:58:05.282	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:58:05.283	INFO	support/context.go:66	Bean容器加载完成
+2022-07-18 15:59:03.814	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 15:59:03.814	INFO	support/context.go:66	Bean容器加载完成
+2022-07-18 16:02:47.258	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:02:47.258	INFO	support/context.go:66	Bean容器加载完成
+2022-07-18 16:12:03.392	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:12:03.393	INFO	support/context.go:76	Bean容器加载完成
+2022-07-18 16:12:55.758	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:13:00.801	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:13:26.970	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:13:35.014	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:14:13.962	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:14:19.402	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:14:27.035	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:15:14.390	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:15:48.506	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:15:48.506	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:15:59.197	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:15:59.198	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:15:59.198	INFO	support/context.go:70	initBeans success
+2022-07-18 16:16:11.289	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:16:11.290	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:16:11.290	INFO	support/context.go:70	initBeans success
+2022-07-18 16:16:13.716	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:16:13.716	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:16:13.716	INFO	support/context.go:70	initBeans success
+2022-07-18 16:16:17.222	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:16:17.223	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:16:17.223	INFO	support/context.go:70	initBeans success
+2022-07-18 16:16:20.228	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:16:20.228	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:16:20.228	INFO	support/context.go:70	initBeans success
+2022-07-18 16:17:03.494	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:17:03.494	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:17:03.494	INFO	support/context.go:70	initBeans success
+2022-07-18 16:17:26.952	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:17:26.953	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:17:26.953	INFO	support/context.go:70	initBeans success
+2022-07-18 16:17:59.945	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:17:59.945	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:17:59.945	INFO	support/context.go:70	initBeans success
+2022-07-18 16:17:59.945	INFO	support/router.go:20	core.CONTEXT.GetControllerMap()	{"map": {"*admin.AdminController":{}}}
+2022-07-18 16:17:59.945	INFO	support/router.go:23	controller info	{"controller": {}}
+2022-07-18 16:17:59.945	INFO	admin/admin.go:19	admin controller 注册完成
+2022-07-18 16:17:59.945	INFO	support/router.go:30	RegisterRoutes success
+2022-07-18 16:17:59.945	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:18:27.007	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:18:27.007	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:18:27.007	INFO	support/context.go:70	initBeans success
+2022-07-18 16:18:27.007	INFO	admin/admin.go:19	admin controller 注册完成
+2022-07-18 16:18:27.007	INFO	support/router.go:27	RegisterRoutes success
+2022-07-18 16:18:27.007	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:18:47.558	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:18:47.558	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:18:47.558	INFO	support/context.go:70	initBeans success
+2022-07-18 16:18:47.558	INFO	admin/admin.go:19	admin controller 注册完成
+2022-07-18 16:18:47.558	INFO	support/router.go:27	RegisterRoutes success
+2022-07-18 16:18:47.558	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:18:49.526	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:18:49.528	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:18:49.528	INFO	support/context.go:70	initBeans success
+2022-07-18 16:18:49.528	INFO	admin/admin.go:19	admin controller 注册完成
+2022-07-18 16:18:49.528	INFO	support/router.go:27	registerRoutes success
+2022-07-18 16:18:49.528	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:18:49.797	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:18:49.798	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:18:49.798	INFO	support/context.go:70	initBeans success
+2022-07-18 16:18:49.798	INFO	admin/admin.go:19	admin controller 注册完成
+2022-07-18 16:18:49.798	INFO	support/router.go:27	registerRoutes success
+2022-07-18 16:18:49.798	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:19:09.653	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:19:09.654	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:19:09.654	INFO	support/context.go:70	initBeans success
+2022-07-18 16:19:09.654	INFO	support/router.go:27	registerRoutes success
+2022-07-18 16:19:09.654	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:19:55.362	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:19:55.363	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:19:55.363	INFO	support/context.go:70	initBeans success
+2022-07-18 16:19:55.363	INFO	support/router.go:24	RegisterRoutes success	{"bean": "/"}
+2022-07-18 16:19:55.363	INFO	support/router.go:24	RegisterRoutes success	{"bean": "index.php"}
+2022-07-18 16:19:55.363	INFO	support/router.go:28	registerRoutes success
+2022-07-18 16:19:55.363	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:20:13.386	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:20:13.386	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:20:13.386	INFO	support/context.go:70	initBeans success
+2022-07-18 16:20:13.386	INFO	support/router.go:24	RegisterRoutes success	{"bean": "/index.php"}
+2022-07-18 16:20:13.386	INFO	support/router.go:24	RegisterRoutes success	{"bean": "/"}
+2022-07-18 16:20:13.386	INFO	support/router.go:28	registerRoutes success
+2022-07-18 16:20:13.386	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:20:21.147	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:20:21.148	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:20:21.148	INFO	support/context.go:70	initBeans success
+2022-07-18 16:20:21.148	INFO	support/router.go:24	RegisterRoutes success	{"routesError": "json: unsupported type: gin.HandlerFunc"}
+2022-07-18 16:20:21.148	INFO	support/router.go:24	RegisterRoutes success	{"routesError": "json: unsupported type: gin.HandlerFunc"}
+2022-07-18 16:20:21.148	INFO	support/router.go:28	registerRoutes success
+2022-07-18 16:20:21.148	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:20:39.460	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:20:39.460	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:20:39.460	INFO	support/context.go:70	initBeans success
+2022-07-18 16:20:39.460	INFO	support/router.go:24	RegisterRoutes success	{"routes": "/"}
+2022-07-18 16:20:39.460	INFO	support/router.go:24	RegisterRoutes success	{"routes": "/index.php"}
+2022-07-18 16:20:39.460	INFO	support/router.go:28	registerRoutes success
+2022-07-18 16:20:39.460	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:20:49.350	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:20:49.351	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:20:49.351	INFO	support/context.go:70	initBeans success
+2022-07-18 16:20:49.351	INFO	support/router.go:24	RegisterRoutes success	{"routes": {}}
+2022-07-18 16:20:49.351	INFO	support/router.go:24	RegisterRoutes success	{"routes": {}}
+2022-07-18 16:20:49.351	INFO	support/router.go:28	registerRoutes success
+2022-07-18 16:20:49.351	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:21:20.884	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:21:20.885	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:21:20.885	INFO	support/context.go:70	initBeans success
+2022-07-18 16:21:20.885	INFO	support/router.go:27	RegisterRoutes success	{"routes": {}}
+2022-07-18 16:21:20.885	INFO	support/router.go:27	RegisterRoutes success	{"routes": {}}
+2022-07-18 16:21:20.885	INFO	support/router.go:31	registerRoutes success
+2022-07-18 16:21:20.885	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:21:36.714	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:21:36.714	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:21:36.714	INFO	support/context.go:70	initBeans success
+2022-07-18 16:21:36.714	INFO	support/router.go:30	RegisterRoutes success	{"routes": "*admin.AdminController"}
+2022-07-18 16:21:36.714	INFO	support/router.go:30	RegisterRoutes success	{"routes": "*admin.AdminController"}
+2022-07-18 16:21:36.714	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:21:36.714	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:22:14.758	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:22:14.759	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:22:14.759	INFO	support/context.go:70	initBeans success
+2022-07-18 16:22:14.759	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:22:14.759	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:22:14.759	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:22:14.759	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:22:39.191	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:22:39.192	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:22:39.192	INFO	support/context.go:70	initBeans success
+2022-07-18 16:22:39.192	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:22:39.192	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:22:39.192	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:22:39.192	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:22:57.621	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:22:57.621	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:22:57.621	INFO	support/context.go:70	initBeans success
+2022-07-18 16:22:57.621	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:22:57.621	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:22:57.621	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:22:57.621	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:22:57.983	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:22:57.983	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:22:57.983	INFO	support/context.go:70	initBeans success
+2022-07-18 16:22:57.983	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:22:57.983	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:22:57.983	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:22:57.983	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:24:03.641	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:24:03.641	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:24:03.641	INFO	support/context.go:70	initBeans success
+2022-07-18 16:24:03.641	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:24:03.641	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:24:03.641	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:24:03.641	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:24:19.153	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:24:19.153	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:24:19.153	INFO	support/context.go:70	initBeans success
+2022-07-18 16:24:19.153	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:24:19.153	INFO	support/router.go:30	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:24:19.153	INFO	support/router.go:34	registerRoutes success
+2022-07-18 16:24:19.153	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:24:52.168	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:24:52.168	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:24:52.168	INFO	support/context.go:70	initBeans success
+2022-07-18 16:24:52.168	INFO	support/router.go:33	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:24:52.168	INFO	support/router.go:33	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:24:52.168	INFO	support/router.go:37	registerRoutes success
+2022-07-18 16:24:52.168	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:26:38.708	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:26:38.709	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:26:38.709	INFO	support/context.go:70	initBeans success
+2022-07-18 16:26:38.709	INFO	support/router.go:40	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:26:38.709	INFO	support/router.go:40	RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:26:38.709	INFO	support/router.go:45	registerRoutes success
+2022-07-18 16:26:38.709	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:27:20.729	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:27:20.729	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:27:20.729	INFO	support/context.go:70	initBeans success
+2022-07-18 16:27:20.729	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:27:20.729	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:27:20.729	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:27:20.729	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:27:55.544	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:27:55.544	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:27:55.544	INFO	support/context.go:70	initBeans success
+2022-07-18 16:27:55.544	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:27:55.544	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:27:55.544	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:27:55.544	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:00.843	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:00.844	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:00.844	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:00.844	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:00.844	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:00.844	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:00.844	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:10.772	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:10.772	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:10.772	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:10.772	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:10.772	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:10.772	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:10.772	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:13.548	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:13.548	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:13.548	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:13.548	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:13.548	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:13.548	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:13.548	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:21.254	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:21.255	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:21.255	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:21.255	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:21.255	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:21.255	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:21.255	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:43.286	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:43.286	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:43.286	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:43.286	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:43.286	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:43.286	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:43.286	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:28:54.125	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:28:54.125	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:28:54.125	INFO	support/context.go:70	initBeans success
+2022-07-18 16:28:54.125	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:28:54.125	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:28:54.125	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:28:54.125	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:29:05.274	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:29:05.274	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:29:05.274	INFO	support/context.go:70	initBeans success
+2022-07-18 16:29:05.274	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:29:05.274	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:29:05.274	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:29:05.275	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:29:08.297	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:29:08.297	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:29:08.298	INFO	support/context.go:70	initBeans success
+2022-07-18 16:29:08.298	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:29:08.298	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:29:08.298	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:29:08.298	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:29:17.401	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:29:17.402	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:29:17.402	INFO	support/context.go:70	initBeans success
+2022-07-18 16:29:17.402	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:29:17.402	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:29:17.402	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:29:17.402	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:29:35.623	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:29:35.624	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:29:35.624	INFO	support/context.go:70	initBeans success
+2022-07-18 16:29:35.624	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:29:35.624	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:29:35.624	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:29:35.624	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:29:50.602	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:29:50.603	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:29:50.603	INFO	support/context.go:70	initBeans success
+2022-07-18 16:29:50.603	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:29:50.603	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:29:50.603	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:29:50.603	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:30:07.846	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:30:07.846	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:30:07.846	INFO	support/context.go:70	initBeans success
+2022-07-18 16:30:07.846	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:30:07.846	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:30:07.846	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:30:07.847	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:30:08.099	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:30:08.099	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:30:08.099	INFO	support/context.go:70	initBeans success
+2022-07-18 16:30:08.099	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:30:08.099	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:30:08.099	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:30:08.099	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:30:12.920	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:30:12.920	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:30:12.920	INFO	support/context.go:70	initBeans success
+2022-07-18 16:30:12.920	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:30:12.920	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:30:12.920	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:30:12.920	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:30:18.559	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:30:18.560	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:30:18.560	INFO	support/context.go:70	initBeans success
+2022-07-18 16:30:18.560	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:30:18.560	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:30:18.560	INFO	support/router.go:42	registerRoutes success
+2022-07-18 16:30:18.560	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:30:45.306	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:30:45.306	INFO	support/context.go:50	registerBeans success
+2022-07-18 16:30:45.306	INFO	support/context.go:70	initBeans success
+2022-07-18 16:30:45.306	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:30:45.306	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:30:45.306	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:30:45.306	INFO	support/context.go:83	Bean容器加载完成
+2022-07-18 16:31:10.958	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:31:10.958	ERROR	support/context.go:38	has been registerd, skip	{"typeName": "*admin.AdminController"}
+biuaxia.cn/bb/code/support.(*BbContext).registerBean
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:38
+biuaxia.cn/bb/code/support.(*BbContext).registerBeans
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:50
+biuaxia.cn/bb/code/support.(*BbContext).Init
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:79
+biuaxia.cn/bb/code/support.(*BbApplication).HandleWeb
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:41
+biuaxia.cn/bb/code/support.(*BbApplication).Start
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:26
+main.main
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/main.go:10
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-07-18 16:31:10.958	INFO	support/context.go:52	registerBeans success
+2022-07-18 16:31:10.958	INFO	support/context.go:72	initBeans success
+2022-07-18 16:31:10.958	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:31:10.958	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:31:10.958	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:31:10.958	INFO	support/context.go:85	Bean容器加载完成
+2022-07-18 16:31:18.593	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:31:18.593	INFO	support/context.go:53	registerBeans success
+2022-07-18 16:31:18.594	INFO	support/context.go:73	initBeans success
+2022-07-18 16:31:18.594	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:31:18.594	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:31:18.594	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:31:18.594	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:31:18.594	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:31:18.594	INFO	support/context.go:86	Bean容器加载完成
+2022-07-18 16:31:34.506	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:31:34.506	INFO	support/context.go:53	registerBeans success
+2022-07-18 16:31:34.506	INFO	support/context.go:73	initBeans success
+2022-07-18 16:31:34.506	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:31:34.506	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:31:34.506	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:31:34.506	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:31:34.506	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:31:34.506	INFO	support/context.go:86	Bean容器加载完成
+2022-07-18 16:32:36.230	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:32:36.231	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:32:36.231	INFO	support/context.go:74	initBeans success
+2022-07-18 16:32:36.231	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:32:36.231	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:32:36.231	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:32:36.231	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:32:36.231	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/"}
+2022-07-18 16:32:36.231	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/index.php"}
+2022-07-18 16:32:36.231	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:32:36.231	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:32:40.507	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:32:40.507	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:32:40.507	INFO	support/context.go:74	initBeans success
+2022-07-18 16:32:40.507	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:32:40.507	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:32:40.507	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/"}
+2022-07-18 16:32:40.507	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/index.php"}
+2022-07-18 16:32:40.507	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:32:40.507	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:32:40.507	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:32:40.507	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:33:10.213	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:33:10.214	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:33:10.214	INFO	support/context.go:74	initBeans success
+2022-07-18 16:33:10.214	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:33:10.214	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:33:10.214	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:33:10.214	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:33:10.214	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:33:10.214	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:33:10.214	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:33:10.214	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:33:20.748	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:33:20.748	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:33:20.748	INFO	support/context.go:74	initBeans success
+2022-07-18 16:33:20.748	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:33:20.748	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:33:20.748	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:33:20.748	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:33:20.748	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:33:20.748	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:33:20.748	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:33:20.748	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:33:55.581	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:33:55.582	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:33:55.582	INFO	support/context.go:74	initBeans success
+2022-07-18 16:33:55.582	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:33:55.582	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:33:55.582	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:33:55.582	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:33:55.582	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:33:55.582	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:33:55.582	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:33:55.582	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:34:34.100	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:34:34.100	INFO	support/context.go:55	registerBeans success
+2022-07-18 16:34:34.100	INFO	support/context.go:75	initBeans success
+2022-07-18 16:34:34.100	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:34:34.100	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:34:34.100	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:34:34.100	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:34:34.100	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:34:34.100	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:34:34.100	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:34:34.101	INFO	support/context.go:92	Bean容器加载完成
+2022-07-18 16:34:40.477	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:34:40.478	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:34:40.478	INFO	support/context.go:74	initBeans success
+2022-07-18 16:34:40.478	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:34:40.478	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:34:40.478	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:34:40.478	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:34:40.478	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:34:40.478	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:34:40.478	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:34:40.478	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:34:50.890	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:34:50.891	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:34:50.891	INFO	support/context.go:74	initBeans success
+2022-07-18 16:34:50.891	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:34:50.891	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:34:50.891	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:34:50.891	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:34:50.891	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:34:50.891	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:34:50.891	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:34:50.891	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:34:51.666	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:34:51.666	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:34:51.666	INFO	support/context.go:74	initBeans success
+2022-07-18 16:34:51.666	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:34:51.666	INFO	support/router.go:32	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:34:51.666	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:34:51.666	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:34:51.666	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:34:51.666	INFO	support/router.go:39	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:34:51.666	INFO	support/router.go:46	registerRoutes success
+2022-07-18 16:34:51.666	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:35:02.235	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:35:02.236	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:35:02.236	INFO	support/context.go:74	initBeans success
+2022-07-18 16:35:02.236	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:35:02.236	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:35:02.236	INFO	support/router.go:39	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:35:02.236	INFO	support/router.go:39	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:35:02.236	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:35:02.236	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:35:02.236	INFO	support/router.go:53	registerRoutes success
+2022-07-18 16:35:02.236	INFO	support/context.go:87	Bean容器加载完成
+2022-07-18 16:35:11.335	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:35:11.335	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:35:11.335	INFO	support/context.go:74	initBeans success
+2022-07-18 16:35:11.335	INFO	support/router.go:39	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:35:11.335	INFO	support/router.go:39	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:35:11.335	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:35:11.335	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:35:11.335	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:35:11.335	INFO	support/router.go:46	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:35:11.335	INFO	support/router.go:53	registerRoutes success
+2022-07-18 16:35:11.335	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:35:17.346	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:35:17.346	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:35:17.346	INFO	support/context.go:74	initBeans success
+2022-07-18 16:35:17.346	INFO	support/router.go:47	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:35:17.346	INFO	support/router.go:47	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:35:17.346	INFO	support/router.go:47	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:35:17.346	INFO	support/router.go:47	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:35:17.346	INFO	support/router.go:40	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:35:17.346	INFO	support/router.go:40	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:35:17.346	INFO	support/router.go:54	registerRoutes success
+2022-07-18 16:35:17.347	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:35:29.840	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:35:29.841	INFO	support/context.go:54	registerBeans success
+2022-07-18 16:35:29.841	INFO	support/context.go:74	initBeans success
+2022-07-18 16:35:29.841	INFO	support/router.go:50	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:35:29.841	INFO	support/router.go:50	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:35:29.841	INFO	support/router.go:57	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:35:29.841	INFO	support/router.go:57	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:35:29.841	INFO	support/router.go:57	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:35:29.841	INFO	support/router.go:57	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:35:29.841	INFO	support/router.go:64	registerRoutes success
+2022-07-18 16:35:29.841	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:42:11.770	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:42:11.771	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:42:11.771	INFO	support/context.go:78	initBeans success
+2022-07-18 16:42:11.771	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:42:11.771	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:42:11.771	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:42:11.771	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:42:11.771	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:42:11.771	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:42:11.771	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:42:11.771	INFO	support/context.go:93	Bean容器加载完成
+2022-07-18 16:42:29.896	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:42:29.896	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:42:29.896	INFO	support/context.go:78	initBeans success
+2022-07-18 16:42:29.896	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:42:29.896	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:42:29.896	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:42:29.896	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:42:29.896	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:42:29.896	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:42:29.896	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:42:29.897	INFO	support/context.go:93	Bean容器加载完成
+2022-07-18 16:42:35.872	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:42:35.872	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:42:35.872	INFO	support/context.go:78	initBeans success
+2022-07-18 16:42:35.872	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:42:35.872	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:42:35.872	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:42:35.872	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:42:35.873	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:42:35.873	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:42:35.873	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:42:35.873	INFO	support/context.go:93	Bean容器加载完成
+2022-07-18 16:43:29.221	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:43:29.221	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:43:29.221	INFO	support/context.go:78	initBeans success
+2022-07-18 16:43:29.221	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:43:29.221	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:43:29.221	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:43:29.221	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:43:29.221	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:43:29.221	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:43:29.221	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:43:29.221	INFO	support/context.go:93	Bean容器加载完成
+2022-07-18 16:43:41.696	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:43:41.696	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:43:41.696	INFO	support/context.go:78	initBeans success
+2022-07-18 16:43:41.696	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:43:41.696	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:43:41.696	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:43:41.696	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:43:41.696	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:43:41.696	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:43:41.696	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:43:41.697	INFO	support/context.go:93	Bean容器加载完成
+2022-07-18 16:43:56.751	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:43:56.752	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:43:56.752	INFO	support/context.go:78	initBeans success
+2022-07-18 16:43:56.752	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:43:56.752	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:43:56.752	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:43:56.752	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:43:56.752	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:43:56.752	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:43:56.752	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:43:56.752	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:44:04.729	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:44:04.730	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:44:04.730	INFO	support/context.go:78	initBeans success
+2022-07-18 16:44:04.730	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:44:04.730	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:44:04.730	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:44:04.730	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:44:04.730	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:44:04.730	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:44:04.730	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:44:04.730	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:44:04.730	INFO	support/context.go:93	注册路由完成
+2022-07-18 16:44:11.480	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:44:11.480	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:44:11.480	INFO	support/context.go:78	initBeans success
+2022-07-18 16:44:11.480	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:44:11.480	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:44:11.480	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:44:11.480	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:44:11.480	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:44:11.480	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:44:11.481	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:44:11.481	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:44:11.481	INFO	support/context.go:95	注册路由完成
+2022-07-18 16:44:19.771	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:44:19.772	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:44:19.772	INFO	support/context.go:78	initBeans success
+2022-07-18 16:44:19.772	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:44:19.772	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:44:19.772	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:44:19.772	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:44:19.772	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:44:19.772	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:44:19.772	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:44:19.772	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:44:19.772	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:44:19.772	INFO	support/context.go:97	注册路由完成
+2022-07-18 16:45:27.163	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:45:27.164	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:45:27.164	INFO	support/context.go:78	initBeans success
+2022-07-18 16:45:27.164	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:45:27.164	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:45:27.164	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:45:27.164	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:45:27.164	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:45:27.164	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:45:27.164	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:45:27.164	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:45:27.164	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:45:27.164	INFO	support/context.go:97	注册路由完成
+2022-07-18 16:46:06.326	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:46:06.326	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:46:06.326	INFO	support/context.go:78	initBeans success
+2022-07-18 16:46:06.326	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:46:06.326	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:46:06.326	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:46:06.326	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:46:06.326	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:46:06.326	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:46:06.326	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:46:06.326	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:46:06.326	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:46:06.327	INFO	support/context.go:97	注册路由完成
+2022-07-18 16:46:06.327	ERROR	support/application.go:18	has error	{"err": "runtime error: invalid memory address or nil pointer dereference"}
+biuaxia.cn/bb/code/support.(*BbApplication).Start.func1
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:18
+runtime.gopanic
+	C:/Program Files/Go/src/runtime/panic.go:838
+runtime.panicmem
+	C:/Program Files/Go/src/runtime/panic.go:220
+runtime.sigpanic
+	C:/Program Files/Go/src/runtime/signal_windows.go:255
+github.com/gin-gonic/gin.(*Engine).isTrustedProxy
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:442
+github.com/gin-gonic/gin.(*Engine).isUnsafeTrustedProxies
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:430
+github.com/gin-gonic/gin.(*Engine).Run
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:375
+biuaxia.cn/bb/code/support.(*BbContext).Run
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:35
+biuaxia.cn/bb/code/support.(*BbApplication).HandleWeb
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:40
+biuaxia.cn/bb/code/support.(*BbApplication).Start
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:22
+main.main
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/main.go:10
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-07-18 16:46:18.704	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:46:18.705	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:46:18.705	INFO	support/context.go:78	initBeans success
+2022-07-18 16:46:18.705	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:46:18.705	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:46:18.705	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:46:18.705	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:46:18.705	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:46:18.705	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:46:18.705	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:46:18.705	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:46:18.705	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:46:18.705	INFO	support/context.go:97	注册路由完成
+2022-07-18 16:46:18.705	ERROR	support/application.go:18	has error	{"err": "runtime error: invalid memory address or nil pointer dereference"}
+biuaxia.cn/bb/code/support.(*BbApplication).Start.func1
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:18
+runtime.gopanic
+	C:/Program Files/Go/src/runtime/panic.go:838
+runtime.panicmem
+	C:/Program Files/Go/src/runtime/panic.go:220
+runtime.sigpanic
+	C:/Program Files/Go/src/runtime/signal_windows.go:255
+github.com/gin-gonic/gin.(*Engine).isTrustedProxy
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:442
+github.com/gin-gonic/gin.(*Engine).isUnsafeTrustedProxies
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:430
+github.com/gin-gonic/gin.(*Engine).Run
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:375
+biuaxia.cn/bb/code/support.(*BbContext).Run
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:35
+biuaxia.cn/bb/code/support.(*BbApplication).HandleWeb
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:40
+biuaxia.cn/bb/code/support.(*BbApplication).Start
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:22
+main.main
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/main.go:10
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-07-18 16:47:02.618	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:47:02.618	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:47:02.618	INFO	support/context.go:78	initBeans success
+2022-07-18 16:47:02.618	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:47:02.618	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:47:02.618	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:47:02.618	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:47:02.618	INFO	support/router.go:67	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:47:02.618	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:47:02.618	INFO	support/router.go:74	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:47:02.618	INFO	support/router.go:81	registerRoutes success
+2022-07-18 16:47:02.618	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:47:02.618	INFO	support/context.go:97	注册路由完成
+2022-07-18 16:47:02.618	ERROR	support/application.go:18	has error	{"err": "runtime error: invalid memory address or nil pointer dereference"}
+biuaxia.cn/bb/code/support.(*BbApplication).Start.func1
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:18
+runtime.gopanic
+	C:/Program Files/Go/src/runtime/panic.go:838
+runtime.panicmem
+	C:/Program Files/Go/src/runtime/panic.go:220
+runtime.sigpanic
+	C:/Program Files/Go/src/runtime/signal_windows.go:255
+github.com/gin-gonic/gin.(*Engine).isTrustedProxy
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:442
+github.com/gin-gonic/gin.(*Engine).isUnsafeTrustedProxies
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:430
+github.com/gin-gonic/gin.(*Engine).Run
+	C:/Users/Administrator/go/pkg/mod/github.com/gin-gonic/gin@v1.8.1/gin.go:375
+biuaxia.cn/bb/code/support.(*BbContext).Run
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/context.go:35
+biuaxia.cn/bb/code/support.(*BbApplication).HandleWeb
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:40
+biuaxia.cn/bb/code/support.(*BbApplication).Start
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/code/support/application.go:22
+main.main
+	C:/Users/Administrator/go/src/biuaxia.cn/bb/main.go:10
+runtime.main
+	C:/Program Files/Go/src/runtime/proc.go:250
+2022-07-18 16:48:16.228	INFO	support/log.go:41	Log 初始化完成
+2022-07-18 16:48:16.228	INFO	support/context.go:58	registerBeans success
+2022-07-18 16:48:16.228	INFO	support/context.go:78	initBeans success
+2022-07-18 16:48:16.228	INFO	support/context.go:89	Bean容器加载完成
+2022-07-18 16:48:16.228	INFO	support/router.go:68	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/index.php"}
+2022-07-18 16:48:16.228	INFO	support/router.go:68	admin RegisterRoutes success	{"controller": "*admin.AdminController", "router": "/"}
+2022-07-18 16:48:16.228	INFO	support/router.go:75	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post"}
+2022-07-18 16:48:16.228	INFO	support/router.go:75	RegisterRoutes success	{"controller": "*admin.WritePostController", "router": "/write-post.php"}
+2022-07-18 16:48:16.228	INFO	support/router.go:75	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/"}
+2022-07-18 16:48:16.228	INFO	support/router.go:75	RegisterRoutes success	{"controller": "*index.IndexController", "router": "/index.php"}
+2022-07-18 16:48:16.228	INFO	support/router.go:82	registerRoutes success
+2022-07-18 16:48:16.228	INFO	support/context.go:93	初始化路由完成
+2022-07-18 16:48:16.229	INFO	support/context.go:97	注册路由完成

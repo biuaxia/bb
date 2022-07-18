@@ -1,0 +1,15 @@
+# 服务端口 配置
+ServerPort: 6179
+# MySQL 配置
+MysqlPort: 3306
+MysqlHost: 124.220.202.36
+MysqlSchema: bb
+MysqlUsername: bb
+MysqlPassword: ZsbA4XJPaaKm7bLE
+MysqlCharset: utf8mb4
+# 日志 配置
+LogMaxSize: 10
+LogMaxAge:  30
+LogMaxBackups: 7 
+LogLevel: debug
+LogFilename: bb.log

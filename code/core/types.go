@@ -1,12 +1,4 @@
-package initialize
-
-const (
-	DEFAULT_CONF_FILE_PATH = "build/conf/bb.yaml"
-)
-
-var (
-	Conf = new(AppConfig)
-)
+package core
 
 type AppConfig struct {
 	*MySQLConfig `mapstructure:"mysql"`

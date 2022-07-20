@@ -9,6 +9,7 @@ import (
 	"strings"
 	"time"
 
+	"biuaxia.cn/bb/code/core"
 	"github.com/gin-gonic/gin"
 	"github.com/natefinch/lumberjack"
 	"go.uber.org/zap"
@@ -16,13 +17,13 @@ import (
 )
 
 func Logger() {
-	writeSyncer := getLogWriter(Conf.Filename,
-		Conf.MaxSize,
-		Conf.MaxAge,
-		Conf.MaxBackups)
+	writeSyncer := getLogWriter(core.Conf.Filename,
+		core.Conf.MaxSize,
+		core.Conf.MaxAge,
+		core.Conf.MaxBackups)
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
-	err := l.UnmarshalText([]byte(Conf.Level))
+	err := l.UnmarshalText([]byte(core.Conf.Level))
 	if err != nil {
 		panic(fmt.Errorf("l.UnmarshalText() failed, err: %s", err))
 	}
@@ -56,8 +57,8 @@ func getLogWriter(filename string, maxSize, maxBackup, maxAge int) zapcore.Write
 	}...)
 }
 
-// GinLogger 接收gin框架默认的日志
-func GinLogger() gin.HandlerFunc {
+// logger 接收gin框架默认的日志
+func logger() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		start := time.Now()
 		path := c.Request.URL.Path
@@ -79,8 +80,8 @@ func GinLogger() gin.HandlerFunc {
 	}
 }
 
-// GinRecovery recover掉项目可能出现的panic，并使用zap记录相关日志
-func GinRecovery(stack bool) gin.HandlerFunc {
+// recovery recover掉项目可能出现的panic，并使用zap记录相关日志
+func recovery(stack bool) gin.HandlerFunc {
 	return func(c *gin.Context) {
 		defer func() {
 			if err := recover(); err != nil {

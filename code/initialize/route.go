@@ -1,7 +1,9 @@
-package route
+package initialize
 
 import (
 	"html/template"
+	"net/http"
+	"time"
 
 	"biuaxia.cn/bb/code/route/admin"
 	"biuaxia.cn/bb/code/route/index"
@@ -10,6 +12,50 @@ import (
 	"github.com/foolin/goview/supports/ginview"
 	"github.com/gin-gonic/gin"
 )
+
+var (
+	adminFuncMap = template.FuncMap{
+		"parseDateTime": parseDateTime,
+	}
+	openapiFuncMap = template.FuncMap{
+		"copy": func() string {
+			return time.Now().Format("2006")
+		},
+	}
+)
+
+const (
+	TimeFormat = "2006-01-02 15:04:05"
+)
+
+func parseDateTime(t time.Time) string {
+	return t.Format(TimeFormat)
+}
+
+func Router() (r *gin.Engine) {
+	r = gin.New()
+
+	r.Use(logger(), recovery(true))
+
+	// 404
+	r.NoRoute(func(c *gin.Context) {
+		// controller.ResponseError(c, http.StatusNotFound, "not found")
+	})
+
+	// 静态资源服务
+	r.Static("/assets", "build/html/assets")
+
+	// 心跳检测
+	r.GET("ping", func(c *gin.Context) {
+		c.String(http.StatusOK, "pong")
+	})
+
+	IndexGroup(r)
+	AdminGroup(r)
+	OpenapiGroup(r)
+
+	return
+}
 
 func IndexGroup(router *gin.Engine) {
 	indexMiddleware := ginview.NewMiddleware(goview.Config{

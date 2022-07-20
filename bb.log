@@ -739,3 +739,4 @@ runtime.main
 2022-07-18 16:48:16.228	INFO	support/router.go:82	registerRoutes success
 2022-07-18 16:48:16.228	INFO	support/context.go:93	初始化路由完成
 2022-07-18 16:48:16.229	INFO	support/context.go:97	注册路由完成
+2022-07-20 18:03:22.240	INFO	initialize/log.go:34	Log 初始化完成

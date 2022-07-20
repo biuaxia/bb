@@ -10,6 +10,15 @@ var (
 
 type AppConfig struct {
 	*MySQLConfig `mapstructure:"mysql"`
+	*LogConfig   `mapstructure:"log"`
+}
+
+type LogConfig struct {
+	MaxAge     int
+	MaxSize    int
+	MaxBackups int
+	Level      string
+	Filename   string
 }
 
 type MySQLConfig struct {

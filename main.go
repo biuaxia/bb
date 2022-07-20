@@ -8,7 +8,9 @@ import (
 
 func main() {
 	// 1. viper读取配置
-	initialize.Config()
+	initialize.Configer()
+	// 2. 日志门面
+	initialize.Logger()
 
 	router := gin.Default()
 

@@ -1,3 +1,9 @@
+log:
+  max_age: 30
+  max_size: 100
+  max_backups: 7
+  level: "debug"
+  filename: "bb.log"
 mysql:
   port: 3306
   host: 124.220.202.36

@@ -7,7 +7,7 @@ import (
 	"github.com/spf13/viper"
 )
 
-func Config() {
+func Configer() {
 	viper.SetConfigFile(DEFAULT_CONF_FILE_PATH) // 配置文件(相对项目的路径)，eg: build/conf/bb.yaml
 	if err := viper.ReadInConfig(); err != nil {
 		panic(fmt.Errorf("viper.ReadInConfig() failed, err: %s", err))

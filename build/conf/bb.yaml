@@ -1,0 +1,7 @@
+mysql:
+  port: 3306
+  host: 124.220.202.36
+  schema: bb
+  charset: utf8mb4
+  username: bb
+  password: ZsbA4XJPaaKm7bLE

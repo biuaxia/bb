@@ -1,3 +1,4 @@
+mode: dev
 log:
   max_age: 30
   max_size: 100

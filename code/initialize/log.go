@@ -3,6 +3,7 @@ package initialize
 import (
 	"fmt"
 	"net"
+	"net/http"
 	"net/http/httputil"
 	"os"
 	"runtime/debug"
@@ -17,13 +18,13 @@ import (
 )
 
 func Logger() {
-	writeSyncer := getLogWriter(core.Conf.Filename,
-		core.Conf.MaxSize,
-		core.Conf.MaxAge,
-		core.Conf.MaxBackups)
+	writeSyncer := getLogWriter(core.Conf.LogConfig.Filename,
+		core.Conf.LogConfig.MaxSize,
+		core.Conf.LogConfig.MaxAge,
+		core.Conf.LogConfig.MaxBackups)
 	encoder := getEncoder()
 	var l = new(zapcore.Level)
-	err := l.UnmarshalText([]byte(core.Conf.Level))
+	err := l.UnmarshalText([]byte(core.Conf.LogConfig.Level))
 	if err != nil {
 		panic(fmt.Errorf("l.UnmarshalText() failed, err: %s", err))
 	}
@@ -37,7 +38,7 @@ func Logger() {
 
 func getEncoder() zapcore.Encoder {
 	encoderConfig := zap.NewProductionEncoderConfig()
-	encoderConfig.EncodeTime = zapcore.TimeEncoderOfLayout("2006-01-02 15:04:05.000")
+	encoderConfig.EncodeTime = zapcore.TimeEncoderOfLayout(core.LOCALDATETIME_MILLSECOND_FORMAT_LAYOUT)
 	encoderConfig.TimeKey = "time"
 	encoderConfig.EncodeLevel = zapcore.CapitalLevelEncoder
 	encoderConfig.EncodeDuration = zapcore.SecondsDurationEncoder
@@ -120,7 +121,7 @@ func recovery(stack bool) gin.HandlerFunc {
 						zap.String("request", string(httpRequest)),
 					)
 				}
-				// controller.ResponseErrorWithResCodeMessage(c, controller.CodeServerBusy, err.(error).Error())
+				c.JSON(http.StatusInternalServerError, err.(error).Error())
 			}
 		}()
 		c.Next()

@@ -15,5 +15,3 @@ type TimeResp struct {
 	City      string `json:"city" form:"city"`
 	CreatedAt string `json:"createdAt" form:"createdAt"`
 }
-
-const layout = "2006-01-02 15:04:05"

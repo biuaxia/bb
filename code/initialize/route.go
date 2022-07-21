@@ -5,6 +5,8 @@ import (
 	"net/http"
 	"time"
 
+	"biuaxia.cn/bb/code/action"
+	"biuaxia.cn/bb/code/core"
 	"biuaxia.cn/bb/code/route/admin"
 	"biuaxia.cn/bb/code/route/index"
 	"biuaxia.cn/bb/code/route/openapi"
@@ -24,40 +26,35 @@ var (
 	}
 )
 
-const (
-	TimeFormat = "2006-01-02 15:04:05"
-)
-
 func parseDateTime(t time.Time) string {
-	return t.Format(TimeFormat)
+	return t.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
 }
 
-func Router() (r *gin.Engine) {
-	r = gin.New()
+func Router() {
+	core.Route = gin.New()
 
-	r.Use(logger(), recovery(true))
+	core.Route.Use(logger(), recovery(true))
 
 	// 404
-	r.NoRoute(func(c *gin.Context) {
+	core.Route.NoRoute(func(c *gin.Context) {
 		// controller.ResponseError(c, http.StatusNotFound, "not found")
 	})
 
 	// 静态资源服务
-	r.Static("/assets", "build/html/assets")
+	core.Route.Static("/assets", "build/html/assets")
 
 	// 心跳检测
-	r.GET("ping", func(c *gin.Context) {
+	core.Route.GET("ping", func(c *gin.Context) {
 		c.String(http.StatusOK, "pong")
 	})
 
-	IndexGroup(r)
-	AdminGroup(r)
-	OpenapiGroup(r)
-
-	return
+	IndexGroup()
+	AdminGroup()
+	OpenapiGroup()
+	DispatcherGroup()
 }
 
-func IndexGroup(router *gin.Engine) {
+func IndexGroup() {
 	indexMiddleware := ginview.NewMiddleware(goview.Config{
 		Root:         "build/html/templates/frontend", // 前端模板路径
 		Extension:    ".html",                         // 模板文件后缀
@@ -65,12 +62,12 @@ func IndexGroup(router *gin.Engine) {
 		Funcs:        template.FuncMap{},              // 自定义函数
 		DisableCache: true,                            // 禁用缓存
 	}) // 前端默认渲染
-	indexGroup := router.Group("/", indexMiddleware)
+	indexGroup := core.Route.Group("/", indexMiddleware)
 
 	indexGroup.GET("/", index.Index)
 }
 
-func AdminGroup(router *gin.Engine) {
+func AdminGroup() {
 	adminMiddleware := ginview.NewMiddleware(goview.Config{
 		Root:         "build/html/templates/backend", // 后端模板路径
 		Extension:    ".html",                        // 模板文件后缀
@@ -78,7 +75,7 @@ func AdminGroup(router *gin.Engine) {
 		Funcs:        adminFuncMap,                   // 自定义函数
 		DisableCache: true,                           // 禁用缓存
 	}) // 后端默认渲染
-	adminGroup := router.Group("/admin", adminMiddleware)
+	adminGroup := core.Route.Group("/admin", adminMiddleware)
 
 	{
 		adminGroup.GET("/", admin.Index)
@@ -95,7 +92,7 @@ func AdminGroup(router *gin.Engine) {
 	}
 }
 
-func OpenapiGroup(router *gin.Engine) {
+func OpenapiGroup() {
 	openapiMiddleware := ginview.NewMiddleware(goview.Config{
 		Root:         "build/html/templates/openapi", // 前端模板路径
 		Extension:    ".html",                        // 模板文件后缀
@@ -104,7 +101,23 @@ func OpenapiGroup(router *gin.Engine) {
 		Funcs:        openapiFuncMap,                 // 自定义函数
 		DisableCache: true,                           // 禁用缓存
 	}) // 前端默认渲染
-	openapiGroup := router.Group("/openapi", openapiMiddleware)
+	openapiGroup := core.Route.Group("/openapi", openapiMiddleware)
 
 	openapiGroup.GET("/", openapi.Index)
+}
+
+func DispatcherGroup() {
+	r := core.Route.Group("/index.php")
+
+	{
+		ActionGroup(r)
+	}
+}
+
+func ActionGroup(rg *gin.RouterGroup) {
+	r := rg.Group("/action")
+
+	{
+		r.POST("/contents-post-edit", action.ContentsPostEdit)
+	}
 }

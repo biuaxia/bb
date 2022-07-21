@@ -10,11 +10,11 @@ import (
 
 func Dashboard(ctx *gin.Context) {
 	ginview.HTML(ctx, http.StatusOK, "dashboard", gin.H{
-		"port":     core.Conf.Port,
-		"host":     core.Conf.Host,
-		"schema":   core.Conf.Schema,
-		"charset":  core.Conf.Charset,
-		"username": core.Conf.Username,
-		"password": core.Conf.Password,
+		"port":     core.Conf.MySQLConfig.Port,
+		"host":     core.Conf.MySQLConfig.Host,
+		"schema":   core.Conf.MySQLConfig.Schema,
+		"charset":  core.Conf.MySQLConfig.Charset,
+		"username": core.Conf.MySQLConfig.Username,
+		"password": core.Conf.MySQLConfig.Password,
 	})
 }

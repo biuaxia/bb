@@ -1,8 +1,9 @@
 package core
 
 type AppConfig struct {
-	*MySQLConfig `mapstructure:"mysql"`
-	*LogConfig   `mapstructure:"log"`
+	Mode        string
+	MySQLConfig *MySQLConfig `mapstructure:"mysql"`
+	LogConfig   *LogConfig   `mapstructure:"log"`
 }
 
 type LogConfig struct {

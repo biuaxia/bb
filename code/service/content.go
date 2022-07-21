@@ -16,3 +16,13 @@ func AddContent(cf *model.ContentForm) {
 	}
 	zap.L().Debug("AddContent", zap.Uint("id", id))
 }
+
+func GetAllContent() []model.Content {
+	contents, err := dao.QueryAllContent()
+	if err != nil {
+		zap.L().Error("查询出错", zap.Error(err))
+		return nil
+	}
+	zap.L().Debug("GetAllContent", zap.Any("contents", contents))
+	return contents
+}

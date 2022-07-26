@@ -1,23 +1,50 @@
 package initialize
 
 import (
+	"fmt"
 	"html/template"
 	"net/http"
+	"strings"
 	"time"
+	"unicode/utf8"
 
-	"biuaxia.cn/bb/code/action"
 	"biuaxia.cn/bb/code/core"
+	"biuaxia.cn/bb/code/route/action"
 	"biuaxia.cn/bb/code/route/admin"
 	"biuaxia.cn/bb/code/route/index"
 	"biuaxia.cn/bb/code/route/openapi"
 	"github.com/foolin/goview"
 	"github.com/foolin/goview/supports/ginview"
 	"github.com/gin-gonic/gin"
+	"gitlab.com/golang-commonmark/markdown"
+	"go.uber.org/zap"
 )
+
+var md = markdown.New(markdown.HTML(true),
+	markdown.Tables(true),
+	markdown.Linkify(true),
+	markdown.Typographer(true),
+	markdown.XHTMLOutput(true))
 
 var (
 	adminFuncMap = template.FuncMap{
-		"parseDateTime": parseDateTime,
+		"md2HTML":                 md2HTML,
+		"parseTime":               parseTime,
+		"parseDate":               parseDate,
+		"parseDateTime":           parseDateTime,
+		"parseDateTimeMinute":     parseDateTimeMinute,
+		"parseDateTimeMillsecond": parseDateTimeMillsecond,
+		"allMenu":                 allMenu,
+	}
+	indexFuncMap = template.FuncMap{
+		"md2HTML":                 md2HTML,
+		"parseTime":               parseTime,
+		"parseDate":               parseDate,
+		"parseDateTime":           parseDateTime,
+		"parseDateTimeMinute":     parseDateTimeMinute,
+		"parseDateTimeMillsecond": parseDateTimeMillsecond,
+		"specifiedStr":            specifiedStr,
+		"specifiedStr20":          specifiedStr20,
 	}
 	openapiFuncMap = template.FuncMap{
 		"copy": func() string {
@@ -26,8 +53,63 @@ var (
 	}
 )
 
+func md2HTML(s string) template.HTML {
+	htmlStr := md.RenderToString([]byte(s))
+	zap.L().Debug("md2HTML", zap.String("s", s), zap.String("htmlStr", htmlStr))
+	return template.HTML(htmlStr)
+}
+
+func specifiedStr(s string, num int) string {
+	count := utf8.RuneCountInString(s)
+	if count <= num {
+		return s
+	}
+	runes := []rune(s)
+	return string(runes[:num])
+}
+
+func specifiedStr20(s string) string {
+	return specifiedStr(s, 20)
+}
+
+func allMenu() template.HTML {
+	allMenus := core.AllMenus
+	var outStr []string
+	for _, menu := range allMenus {
+		parent := menu.Parent
+		items := menu.Child
+
+		parentHtml := fmt.Sprintf(`<li class="parent"><a href="%s">%s</a></li>`, parent.Href, parent.Name)
+
+		var itemsStr []string
+		for _, item := range items {
+			itemsStr = append(itemsStr, fmt.Sprintf(`<li><a href="%s">%s</a></li>`, item.Href, item.Name))
+		}
+
+		outStr = append(outStr, fmt.Sprintf(`<ul class="root">
+            %s
+            <ul class="child">
+				%s
+            </ul>
+        </ul>`, parentHtml, strings.Join(itemsStr, "\r\n\t\t\t\t")))
+	}
+	return template.HTML(strings.Join(outStr, "\r\n\t\t"))
+}
+
+func parseTime(t time.Time) string {
+	return t.Format(core.LOCALTIME_FORMAT_LAYOUT)
+}
+func parseDate(t time.Time) string {
+	return t.Format(core.LOCALDATE_FORMAT_LAYOUT)
+}
 func parseDateTime(t time.Time) string {
 	return t.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
+}
+func parseDateTimeMinute(t time.Time) string {
+	return t.Format(core.LOCALDATETIME_MINUTE_FORMAT_LAYOUT)
+}
+func parseDateTimeMillsecond(t time.Time) string {
+	return t.Format(core.LOCALDATETIME_MILLSECOND_FORMAT_LAYOUT)
 }
 
 func Router() {
@@ -59,12 +141,15 @@ func IndexGroup() {
 		Root:         "build/html/templates/frontend", // 前端模板路径
 		Extension:    ".html",                         // 模板文件后缀
 		Master:       "layouts/master",                // 渲染主文件
-		Funcs:        template.FuncMap{},              // 自定义函数
+		Funcs:        indexFuncMap,                    // 自定义函数
 		DisableCache: true,                            // 禁用缓存
 	}) // 前端默认渲染
 	indexGroup := core.Route.Group("/", indexMiddleware)
 
 	indexGroup.GET("/", index.Index)
+	indexGroup.GET("/index.php", index.Index)
+
+	indexGroup.GET("/index.php/archives/:id", index.ViewContentByArchives)
 }
 
 func AdminGroup() {

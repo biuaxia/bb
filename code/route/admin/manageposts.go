@@ -9,7 +9,7 @@ import (
 )
 
 func ManagePosts(ctx *gin.Context) {
-	contents := service.GetAllContent()
+	contents := service.GetAllContentOmitText()
 	ginview.HTML(ctx, http.StatusOK, "manage-posts", gin.H{
 		"contents": contents,
 	})

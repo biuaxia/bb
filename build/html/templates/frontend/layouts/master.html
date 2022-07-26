@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{.title}}</title>
-</head>
-<body>
-    {{template "content" .}}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="renderer" content="webkit" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>标题</title>
+
+    <!-- 使用url函数转换相关路径 -->
+    <link rel="stylesheet" href="/assets/normalize.css" />
+    <link rel="stylesheet" href="/assets/grid.css" />
+    <link rel="stylesheet" href="/assets/style.css" />
+
+    <!-- 通过自有函数输出HTML头部信息 -->
+    <meta name="description" content="Your description here." />
+    <meta name="keywords" content="typecho,php,blog" />
+    <meta name="generator" content="Typecho 1.2.0" />
+    <meta name="template" content="default" />
+    <link rel="pingback" href="/index.php/action/xmlrpc" />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="/index.php/action/xmlrpc?rsd"
+    />
+    <link
+      rel="wlwmanifest"
+      type="application/wlwmanifest+xml"
+      href="/index.php/action/xmlrpc?wlw"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Hello World &raquo; RSS 2.0"
+      href="/index.php/feed/"
+    />
+    <link
+      rel="alternate"
+      type="application/rdf+xml"
+      title="Hello World &raquo; RSS 1.0"
+      href="/index.php/feed/rss/"
+    />
+    <link
+      rel="alternate"
+      type="application/atom+xml"
+      title="Hello World &raquo; ATOM 1.0"
+      href="/index.php/feed/atom/"
+    />
+  </head>
+  <body>
+    {{include "layouts/header"}}
+    <div id="body">
+      <div class="container">
+        <div class="row">
+          {{template "content" .}}
+          {{include "layouts/sidebar"}}
+        </div>
+        <!-- end .row -->
+      </div>
+    </div>
+    <!-- end #body -->
+    {{include "layouts/footer"}}
+  </body>
 </html>

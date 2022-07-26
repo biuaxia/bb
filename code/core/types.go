@@ -22,3 +22,12 @@ type MySQLConfig struct {
 	Username string
 	Password string
 }
+
+type Menu struct {
+	Parent MenuItem
+	Child  []MenuItem
+}
+
+type MenuItem struct {
+	Name, Href string
+}

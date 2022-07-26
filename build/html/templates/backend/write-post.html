@@ -19,14 +19,14 @@
               id="title"
               name="title"
               autocomplete="off"
-              value=""
+              {{if .hasData}}value="{{.content.Title}}"{{else}}value=""{{end}}
               placeholder="标题"
               class="w-100 text title"
             />
           </p>
           <p class="mono url-slug">
             <label for="slug" class="sr-only">网址缩略名</label>
-            bt.biuaxia.cn/index.php/archives/{cid}/
+            {{if .hasData}}/index.php/archives/{{.content.ID}}/{{else}}/index.php/archives/{cid}/{{end}}
           </p>
           <p>
             <label for="text" class="sr-only">文章内容</label>
@@ -36,7 +36,7 @@
               id="text"
               name="text"
               class="w-100 mono"
-            ></textarea>
+            >{{if .hasData}}{{.content.Text}}{{end}}</textarea>
           </p>
 
           <section id="custom-field" class="typecho-post-option fold">
@@ -100,7 +100,7 @@
               </button>
             </span>
             <span class="right">
-              <input type="hidden" name="cid" value="" />
+              <input type="hidden" name="cid" {{if .hasData}}value="{{.content.ID}}"{{else}}value=""{{end}} />
               <button type="button" id="btn-preview" class="btn">
                 <i class="i-exlink"></i> 预览文章
               </button>
@@ -149,7 +149,7 @@
                   name="date"
                   id="date"
                   autocomplete="off"
-                  value=""
+                  {{if .hasData}}value="{{parseDateTimeMinute .content.CreatedAt}}"{{else}}value=""{{end}}
                 />
               </p>
             </section>

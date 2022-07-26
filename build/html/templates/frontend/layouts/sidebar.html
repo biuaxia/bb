@@ -1,0 +1,63 @@
+<div
+  class="col-mb-12 col-offset-1 col-3 kit-hidden-tb"
+  id="secondary"
+  role="complementary"
+>
+  <section class="widget">
+    <h3 class="widget-title">最新文章</h3>
+    <ul class="widget-list">
+      {{range $i, $c := .contents}}
+      <li><a href="/index.php/archives/{{$c.ID}}/">{{$c.Title}}</a></li>
+      {{end}}
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h3 class="widget-title">最近回复</h3>
+    <ul class="widget-list">
+      <li>
+        <a href="/index.php/archives/1/#comment-1"
+          >Typecho</a
+        >: 欢迎加入 Typecho 大家族
+      </li>
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h3 class="widget-title">分类</h3>
+    <ul class="widget-list">
+      <li class="category-level-0 category-parent">
+        <a href="/index.php/category/default/">默认分类</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h3 class="widget-title">归档</h3>
+    <ul class="widget-list">
+      <li><a href="/index.php/2022/07/">July 2022</a></li>
+      <li><a href="/index.php/2022/05/">May 2022</a></li>
+    </ul>
+  </section>
+
+  <section class="widget">
+    <h3 class="widget-title">其它</h3>
+    <ul class="widget-list">
+      <li class="last">
+        <a href="/admin/">进入后台 (biuaxia)</a>
+      </li>
+      <li>
+        <a
+          href="/index.php/action/logout?_=3a8067aab4ea90716ada7a53c1d7c17a"
+          >退出</a
+        >
+      </li>
+      <li><a href="/index.php/feed/">文章 RSS</a></li>
+      <li>
+        <a href="/index.php/feed/comments/">评论 RSS</a>
+      </li>
+      <li><a href="http://www.typecho.org">Typecho</a></li>
+    </ul>
+  </section>
+</div>
+<!-- end #sidebar -->

@@ -51,8 +51,11 @@ type IModel struct {
 
 func (imodel *IModel) ConvertToForm() (f *IForm) {
 	f.ID = fmt.Sprint(imodel.ID)
-	f.CreatedAt = imodel.CreatedAt.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
-	f.UpdatedAt = imodel.UpdatedAt.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
-	f.DeletedAt = imodel.DeletedAt.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
+	loc, _ := time.LoadLocation("Local")
+	// loc, _ := time.LoadLocation("Asia/Shanghai")
+
+	f.CreatedAt = imodel.CreatedAt.In(loc).Format(core.LOCALDATETIME_FORMAT_LAYOUT)
+	f.UpdatedAt = imodel.UpdatedAt.In(loc).Format(core.LOCALDATETIME_FORMAT_LAYOUT)
+	f.DeletedAt = imodel.DeletedAt.In(loc).Format(core.LOCALDATETIME_FORMAT_LAYOUT)
 	return
 }

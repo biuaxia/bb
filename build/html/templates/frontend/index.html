@@ -1,3 +1,31 @@
-{{define "content"}}
-<h1>{{.content}}</h1>
+{{ define "content"}}
+<div class="col-mb-12 col-8" id="main" role="main">
+  {{range $i, $c := .contents}}
+  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 class="post-title" itemprop="name headline">
+      <a itemprop="url" href="/index.php/archives/{{$c.ID}}/">{{$c.Title}}</a>
+    </h2>
+    <ul class="post-meta">
+      <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+        作者:
+        <a itemprop="name" href="/index.php/author/{{$c.AuthorId}}/" rel="author">{{$c.AuthorId}}</a>
+      </li>
+      <li>
+        时间:
+        <time datetime="{{$c.CreatedAt}}" itemprop="datePublished">{{parseDateTimeMinute $c.CreatedAt}}</time>
+      </li>
+      <li>
+        分类:
+        <a href="/index.php/category/default/">默认分类</a>
+      </li>
+      <li itemprop="interactionCount">
+        <a itemprop="discussionUrl" href="/index.php/archives/1/#comments">1 条评论</a>
+      </li>
+    </ul>
+    <div class="post-content" itemprop="articleBody">{{md2HTML $c.Text}}</div>
+  </article>
+  {{end}}
+</div>
+<!-- end #main-->
+
 {{end}}

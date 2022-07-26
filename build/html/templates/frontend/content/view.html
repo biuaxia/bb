@@ -1,0 +1,51 @@
+{{ define "content"}}
+<div class="col-mb-12 col-8" id="main" role="main">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline">
+            <a itemprop="url" href="/index.php/archives/{{.content.ID}}/">{{.content.Title}}</a>
+        </h1>
+        <ul class="post-meta">
+            <li itemprop="author" itemscope itemtype="http://schema.org/Person">
+                作者: <a itemprop="name" href="/index.php/author/{{.content.AuthorId}}/"
+                    rel="author">{{.content.AuthorId}}</a>
+            </li>
+            <li>时间: <time datetime="{{parseDate .content.CreatedAt}}" itemprop="datePublished">{{parseDate
+                    .content.CreatedAt}}</time>
+            </li>
+            <li>分类: <a href="/index.php/category/default/">默认分类</a></li>
+        </ul>
+        <div class="post-content" itemprop="articleBody">{{md2HTML .content.Text}}</div>
+        <p itemprop="keywords" class="tags">标签: none</p>
+    </article>
+
+    <div id="comments">
+
+        <div id="respond-post-6" class="respond">
+            <div class="cancel-comment-reply">
+                <a id="cancel-comment-reply-link" href="/index.php/archives/6/#respond-post-6" rel="nofollow"
+                    style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>
+            </div>
+
+            <h3 id="response">添加新评论</h3>
+            <form method="post" action="/index.php/archives/6/comment" id="comment-form" role="form">
+                <p>登录身份: <a href="/admin/profile.php">biuaxia</a>. <a
+                        href="/index.php/action/logout?_=da1cce14a4bf1c66bc7d58ffd3949a79" title="Logout">退出 &raquo;</a>
+                </p>
+                <p>
+                    <label for="textarea" class="required">内容</label>
+                    <textarea rows="8" cols="50" name="text" id="textarea" class="textarea" required></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="submit">提交评论</button>
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <ul class="post-near">
+        <li>上一篇: <a href="/index.php/archives/5/" title="测试">测试</a></li>
+        <li>下一篇: 没有了</li>
+    </ul>
+</div><!-- end #main-->
+
+{{end}}

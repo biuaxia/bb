@@ -26,7 +26,14 @@ func ContentsPostEdit(ctx *gin.Context) {
 	cf.Status = f.Do
 	cf.Types = "post"
 
-	service.AddContent(&cf)
+	if f.Cid != "" && f.Cid != "0" {
+		cf.ID = f.Cid
+		// 更新
+		service.RenewContent(&cf)
+	} else {
+		// 新增
+		service.AddContent(&cf)
+	}
 
 	ctx.Redirect(http.StatusFound, "/admin/manage-posts")
 }

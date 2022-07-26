@@ -5,6 +5,12 @@ import "regexp"
 const (
 	DEFAULT_CONF_FILE_PATH = "build/conf/bb.yaml"
 
+	LOCALDATE_FORMAT_LAYOUT = "2006-01-02"
+	LOCALDATE_RE_LAYOUT     = `\d+-\d+-\d+`
+
+	LOCALTIME_FORMAT_LAYOUT = "15:04:05"
+	LOCALTIME_RE_LAYOUT     = `\d+:\d+:\d+`
+
 	LOCALDATETIME_FORMAT_LAYOUT = "2006-01-02 15:04:05"
 	LOCALDATETIME_RE_LAYOUT     = `\d+-\d+-\d+ \d+:\d+:\d+`
 

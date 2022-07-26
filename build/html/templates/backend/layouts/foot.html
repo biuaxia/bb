@@ -121,6 +121,7 @@
                     var t = $(this), href = t.attr('href');
 
                     if ((href && href[0] == '#')
+                        || /^\/admin.*$/.exec(href)
                         || /^\/admin\/.*$/.exec(href)
                         || /^\/index\.php\/action\/[_a-zA-Z0-9\/]+.*$/.exec(href)) {
                         return;

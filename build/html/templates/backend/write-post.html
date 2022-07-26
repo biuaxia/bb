@@ -6,23 +6,13 @@
       <h2>撰写新文章</h2>
     </div>
     <div class="row typecho-page-main typecho-post-area" role="form">
-      <form
-        action="/index.php/action/contents-post-edit?_=148da8799e402241c2155c1bf623c085"
-        method="post"
-        name="write_post"
-      >
+      <form action="/index.php/action/contents-post-edit?_=148da8799e402241c2155c1bf623c085" method="post"
+        name="write_post">
         <div class="col-mb-12 col-tb-9" role="main">
           <p class="title">
             <label for="title" class="sr-only">标题</label>
-            <input
-              type="text"
-              id="title"
-              name="title"
-              autocomplete="off"
-              {{if .hasData}}value="{{.content.Title}}"{{else}}value=""{{end}}
-              placeholder="标题"
-              class="w-100 text title"
-            />
+            <input type="text" id="title" name="title" autocomplete="off" {{if .hasData}}value="{{.content.Title}}"
+              {{else}}value="" {{end}} placeholder="标题" class="w-100 text title" />
           </p>
           <p class="mono url-slug">
             <label for="slug" class="sr-only">网址缩略名</label>
@@ -30,19 +20,13 @@
           </p>
           <p>
             <label for="text" class="sr-only">文章内容</label>
-            <textarea
-              style="height: 350px"
-              autocomplete="off"
-              id="text"
-              name="text"
-              class="w-100 mono"
-            >{{if .hasData}}{{.content.Text}}{{end}}</textarea>
+            <textarea style="height: 350px" autocomplete="off" id="text" name="text"
+              class="w-100 mono">{{if .hasData}}{{.content.Text}}{{end}}</textarea>
           </p>
 
           <section id="custom-field" class="typecho-post-option fold">
-            <label id="custom-field-expand" class="typecho-label"
-              ><a href="##"><i class="i-caret-right"></i> 自定义字段</a></label
-            >
+            <label id="custom-field-expand" class="typecho-label"><a href="##"><i class="i-caret-right"></i>
+                自定义字段</a></label>
             <table class="typecho-list-table mono">
               <colgroup>
                 <col width="25%" />
@@ -53,13 +37,7 @@
               <tr>
                 <td>
                   <label for="fieldname" class="sr-only">字段名称</label>
-                  <input
-                    type="text"
-                    name="fieldNames[]"
-                    placeholder="字段名称"
-                    id="fieldname"
-                    class="text-s w-100"
-                  />
+                  <input type="text" name="fieldNames[]" placeholder="字段名称" id="fieldname" class="text-s w-100" />
                 </td>
                 <td>
                   <label for="fieldtype" class="sr-only">字段类型</label>
@@ -71,13 +49,8 @@
                 </td>
                 <td>
                   <label for="fieldvalue" class="sr-only">字段值</label>
-                  <textarea
-                    name="fieldValues[]"
-                    placeholder="字段值"
-                    id="fieldvalue"
-                    class="text-s w-100"
-                    rows="2"
-                  ></textarea>
+                  <textarea name="fieldValues[]" placeholder="字段值" id="fieldvalue" class="text-s w-100"
+                    rows="2"></textarea>
                 </td>
                 <td>
                   <button type="button" class="btn btn-xs">删除</button>
@@ -100,26 +73,14 @@
               </button>
             </span>
             <span class="right">
-              <input type="hidden" name="cid" {{if .hasData}}value="{{.content.ID}}"{{else}}value=""{{end}} />
+              <input type="hidden" name="cid" {{if .hasData}}value="{{.content.ID}}" {{else}}value="" {{end}} />
               <button type="button" id="btn-preview" class="btn">
                 <i class="i-exlink"></i> 预览文章
               </button>
-              <button
-                type="submit"
-                name="do"
-                value="save"
-                id="btn-save"
-                class="btn"
-              >
+              <button type="submit" name="do" value="save" id="btn-save" class="btn">
                 保存草稿
               </button>
-              <button
-                type="submit"
-                name="do"
-                value="publish"
-                class="btn primary"
-                id="btn-submit"
-              >
+              <button type="submit" name="do" value="publish" class="btn primary" id="btn-submit">
                 发布文章
               </button>
               <input type="hidden" name="markdown" value="1" />
@@ -127,11 +88,7 @@
           </p>
         </div>
 
-        <div
-          id="edit-secondary"
-          class="col-mb-12 col-tb-3"
-          role="complementary"
-        >
+        <div id="edit-secondary" class="col-mb-12 col-tb-3" role="complementary">
           <ul class="typecho-option-tabs clearfix">
             <li class="active w-50"><a href="#tab-advance">选项</a></li>
             <li class="w-50">
@@ -143,14 +100,8 @@
             <section class="typecho-post-option" role="application">
               <label for="date" class="typecho-label">发布日期</label>
               <p>
-                <input
-                  class="typecho-date w-100"
-                  type="text"
-                  name="date"
-                  id="date"
-                  autocomplete="off"
-                  {{if .hasData}}value="{{parseDateTimeMinute .content.CreatedAt}}"{{else}}value=""{{end}}
-                />
+                <input class="typecho-date w-100" type="text" name="date" id="date" autocomplete="off" {{if
+                  .hasData}}value="{{parseDateTimeMinute .content.CreatedAt}}" {{else}}value="" {{end}} />
               </p>
             </section>
 
@@ -158,12 +109,7 @@
               <label class="typecho-label">分类</label>
               <ul>
                 <li>
-                  <input
-                    type="checkbox"
-                    id="category-1"
-                    value="1"
-                    name="category[]"
-                  />
+                  <input type="checkbox" id="category-1" value="1" name="category[]" />
                   <label for="category-1">默认分类</label>
                 </li>
               </ul>
@@ -172,13 +118,7 @@
             <section class="typecho-post-option">
               <label for="token-input-tags" class="typecho-label">标签</label>
               <p>
-                <input
-                  id="tags"
-                  name="tags"
-                  type="text"
-                  value=""
-                  class="w-100 text"
-                />
+                <input id="tags" name="tags" type="text" value="" class="w-100 text" />
               </p>
             </section>
 
@@ -199,16 +139,8 @@
                 </p>
                 <p id="post-password" class="hidden">
                   <label for="protect-pwd" class="sr-only">内容密码</label>
-                  <input
-                    type="text"
-                    name="password"
-                    id="protect-pwd"
-                    class="text-s"
-                    value=""
-                    size="16"
-                    placeholder="内容密码"
-                    autocomplete="off"
-                  />
+                  <input type="text" name="password" id="protect-pwd" class="text-s" value="" size="16"
+                    placeholder="内容密码" autocomplete="off" />
                 </p>
               </section>
 
@@ -216,33 +148,15 @@
                 <label class="typecho-label">权限控制</label>
                 <ul>
                   <li>
-                    <input
-                      id="allowComment"
-                      name="allowComment"
-                      type="checkbox"
-                      value="1"
-                      checked="true"
-                    />
+                    <input id="allowComment" name="allowComment" type="checkbox" value="1" checked="true" />
                     <label for="allowComment">允许评论</label>
                   </li>
                   <li>
-                    <input
-                      id="allowPing"
-                      name="allowPing"
-                      type="checkbox"
-                      value="1"
-                      checked="true"
-                    />
+                    <input id="allowPing" name="allowPing" type="checkbox" value="1" checked="true" />
                     <label for="allowPing">允许被引用</label>
                   </li>
                   <li>
-                    <input
-                      id="allowFeed"
-                      name="allowFeed"
-                      type="checkbox"
-                      value="1"
-                      checked="true"
-                    />
+                    <input id="allowFeed" name="allowFeed" type="checkbox" value="1" checked="true" />
                     <label for="allowFeed">允许在聚合中出现</label>
                   </li>
                 </ul>
@@ -251,12 +165,7 @@
               <section class="typecho-post-option">
                 <label for="trackback" class="typecho-label">引用通告</label>
                 <p>
-                  <textarea
-                    id="trackback"
-                    class="w-100 mono"
-                    name="trackback"
-                    rows="2"
-                  ></textarea>
+                  <textarea id="trackback" class="w-100 mono" name="trackback" rows="2"></textarea>
                 </p>
                 <p class="description">每一行一个引用地址, 用回车隔开</p>
               </section>
@@ -431,9 +340,9 @@
 
     if (slug.length > 0) {
       var wrap = $("<div />").css({
-          position: "relative",
-          display: "inline-block",
-        }),
+        position: "relative",
+        display: "inline-block",
+      }),
         justifySlug = $("<pre />")
           .css({
             display: "block",
@@ -834,7 +743,7 @@
       ph = preview.height(),
       uploadBtn = $(
         '<button type="button" id="btn-fullscreen-upload" class="btn btn-link">' +
-          '<i class="i-upload">附件</i></button>'
+        '<i class="i-upload">附件</i></button>'
       )
         .prependTo(".submit .right")
         .click(function () {
@@ -906,8 +815,8 @@
 
       // 编辑预览切换
       var edittab = $(".editor").prepend(
-          '<div class="wmd-edittab"><a href="#wmd-editarea" class="active">撰写</a><a href="#wmd-preview">预览</a></div>'
-        ),
+        '<div class="wmd-edittab"><a href="#wmd-editarea" class="active">撰写</a><a href="#wmd-preview">预览</a></div>'
+      ),
         editarea = $(textarea.parent()).attr("id", "wmd-editarea");
 
       $(".wmd-edittab a").click(function () {
@@ -950,8 +859,8 @@
     } else {
       var notice = $(
         '<div class="message notice">这篇文章不是由Markdown语法创建的, 继续使用Markdown编辑它吗? ' +
-          '<button class="btn btn-xs primary yes">是</button> ' +
-          '<button class="btn btn-xs no">否</button></div>'
+        '<button class="btn btn-xs primary yes">是</button> ' +
+        '<button class="btn btn-xs no">否</button></div>'
       )
         .hide()
         .insertBefore(textarea)
@@ -1073,16 +982,16 @@
         .data("image", data.isImage)
         .html(
           '<input type="hidden" name="attachment[]" value="' +
-            data.cid +
-            '" />' +
-            '<a class="insert" target="_blank" href="###" title="点击插入文件">' +
-            data.title +
-            '</a><div class="info">' +
-            data.bytes +
-            ' <a class="file" target="_blank" href="/admin/media.php?cid=' +
-            data.cid +
-            '" title="编辑"><i class="i-edit"></i></a>' +
-            ' <a class="delete" href="###" title="删除"><i class="i-delete"></i></a></div>'
+          data.cid +
+          '" />' +
+          '<a class="insert" target="_blank" href="###" title="点击插入文件">' +
+          data.title +
+          '</a><div class="info">' +
+          data.bytes +
+          ' <a class="file" target="_blank" href="/admin/media.php?cid=' +
+          data.cid +
+          '" title="编辑"><i class="i-edit"></i></a>' +
+          ' <a class="delete" href="###" title="删除"><i class="i-delete"></i></a></div>'
         )
         .effect("highlight", 1000);
 
@@ -1244,14 +1153,14 @@
 
     $("#custom-field button.operate-add").click(function () {
       var html =
-          '<tr><td><input type="text" name="fieldNames[]" placeholder="字段名称" class="text-s w-100"></td>' +
-          '<td><select name="fieldTypes[]" id="">' +
-          '<option value="str">字符</option>' +
-          '<option value="int">整数</option>' +
-          '<option value="float">小数</option>' +
-          "</select></td>" +
-          '<td><textarea name="fieldValues[]" placeholder="字段值" class="text-s w-100" rows="2"></textarea></td>' +
-          '<td><button type="button" class="btn btn-xs">删除</button></td></tr>',
+        '<tr><td><input type="text" name="fieldNames[]" placeholder="字段名称" class="text-s w-100"></td>' +
+        '<td><select name="fieldTypes[]" id="">' +
+        '<option value="str">字符</option>' +
+        '<option value="int">整数</option>' +
+        '<option value="float">小数</option>' +
+        "</select></td>" +
+        '<td><textarea name="fieldValues[]" placeholder="字段值" class="text-s w-100" rows="2"></textarea></td>' +
+        '<td><button type="button" class="btn btn-xs">删除</button></td></tr>',
         el = $(html).hide().appendTo("#custom-field table tbody").fadeIn();
 
       $(":input", el).bind("input change", function () {
@@ -1262,4 +1171,5 @@
     });
   });
 </script>
+
 {{end}}

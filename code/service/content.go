@@ -62,3 +62,7 @@ func GetContent(id uint) model.Content {
 func ViewContentByArchives(id uint) model.Content {
 	return GetContent(id)
 }
+
+func DelContent(ids ...int) {
+	dao.DeleteContent(ids...)
+}

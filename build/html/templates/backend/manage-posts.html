@@ -1,4 +1,6 @@
-{{define "content"}} {{include "layouts/menu"}}
+{{define "content"}}
+
+{{include "layouts/menu"}}
 <div class="main">
   <div class="body container">
     <div class="typecho-page-title">
@@ -9,14 +11,10 @@
         <div class="clearfix">
           <ul class="typecho-option-tabs right">
             <li class="">
-              <a href="/admin/manage-posts.php?__typecho_all_posts=on&page=1"
-                >所有</a
-              >
+              <a href="/admin/manage-posts.php?__typecho_all_posts=on&page=1">所有</a>
             </li>
             <li class="current">
-              <a href="/admin/manage-posts.php?__typecho_all_posts=off&page=1"
-                >我的</a
-              >
+              <a href="/admin/manage-posts.php?__typecho_all_posts=off&page=1">我的</a>
             </li>
           </ul>
           <ul class="typecho-option-tabs">
@@ -33,57 +31,37 @@
         <div class="typecho-list-operate clearfix">
           <form method="get">
             <div class="operate">
-              <label
-                ><i class="sr-only">全选</i
-                ><input type="checkbox" class="typecho-table-select-all"
-              /></label>
+              <label><i class="sr-only">全选</i><input type="checkbox" class="typecho-table-select-all" /></label>
               <div class="btn-group btn-drop">
                 <button class="btn dropdown-toggle btn-s" type="button">
                   <i class="sr-only">操作</i>选中项 <i class="i-caret-down"></i>
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a
-                      lang="你确认要删除这些文章吗?"
-                      href="/index.php/action/contents-post-edit?do=delete&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >删除</a
-                    >
+                    <a lang="你确认要删除这些文章吗?"
+                      href="/index.php/action/contents-post-edit?do=delete&_=9243118f3d810dfaa92b43ffcc00a2b3">删除</a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=publish&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>公开</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=publish&_=9243118f3d810dfaa92b43ffcc00a2b3">标记为<strong>公开</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=waiting&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>待审核</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=waiting&_=9243118f3d810dfaa92b43ffcc00a2b3">标记为<strong>待审核</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=hidden&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>隐藏</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=hidden&_=9243118f3d810dfaa92b43ffcc00a2b3">标记为<strong>隐藏</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=private&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>私密</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=private&_=9243118f3d810dfaa92b43ffcc00a2b3">标记为<strong>私密</strong></a>
                   </li>
                 </ul>
               </div>
             </div>
             <div class="search" role="search">
-              <input
-                type="text"
-                class="text-s"
-                placeholder="请输入关键字"
-                value=""
-                name="keywords"
-              />
+              <input type="text" class="text-s" placeholder="请输入关键字" value="" name="keywords" />
               <select name="category">
                 <option value="">所有分类</option>
                 <option value="1">默认分类</option>
@@ -122,21 +100,14 @@
                     <input type="checkbox" value="{{$content.ID}}" name="cid[]" />
                   </td>
                   <td class="kit-hidden-mb">
-                    <a
-                      href="/admin/manage-comments.php?cid={{$content.ID}}"
-                      class="balloon-button size-1"
-                      title="0 评论"
-                      >0</a
-                    >
+                    <a href="/admin/manage-comments.php?cid={{$content.ID}}" class="balloon-button size-1"
+                      title="0 评论">0</a>
                   </td>
                   <td>
                     <a href="/admin/write-post.php?cid={{$content.ID}}">{{$content.Title}}</a>
-                    <a href="/admin/write-post.php?cid={{$content.ID}}" title="编辑 {{$content.Title}}"
-                      ><i class="i-edit"></i
-                    ></a>
-                    <a href="/index.php/archives/{{$content.ID}}/" title="浏览 测试"
-                      ><i class="i-exlink"></i
-                    ></a>
+                    <a href="/admin/write-post.php?cid={{$content.ID}}" title="编辑 {{$content.Title}}"><i
+                        class="i-edit"></i></a>
+                    <a href="/index.php/archives/{{$content.ID}}/" title="浏览 测试"><i class="i-exlink"></i></a>
                   </td>
                   <td class="kit-hidden-mb">
                     <a href="/admin/manage-posts.php?uid=1">{{$content.AuthorId}}</a>
@@ -156,45 +127,31 @@
         <div class="typecho-list-operate clearfix">
           <form method="get">
             <div class="operate">
-              <label
-                ><i class="sr-only">全选</i
-                ><input type="checkbox" class="typecho-table-select-all"
-              /></label>
+              <label><i class="sr-only">全选</i><input type="checkbox" class="typecho-table-select-all" /></label>
               <div class="btn-group btn-drop">
                 <button class="btn dropdown-toggle btn-s" type="button">
                   <i class="sr-only">操作</i>选中项 <i class="i-caret-down"></i>
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a
-                      lang="你确认要删除这些文章吗?"
-                      href="/index.php/action/contents-post-edit?do=delete&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >删除</a
-                    >
+                    <a lang="你确认要删除这些文章吗?"
+                      href="/index.php/action/contents-post-edit?do=delete">删除</a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=publish&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>公开</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=publish">标记为<strong>公开</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=waiting&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>待审核</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=waiting">标记为<strong>待审核</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=hidden&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>隐藏</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=hidden">标记为<strong>隐藏</strong></a>
                   </li>
                   <li>
                     <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=private&_=9243118f3d810dfaa92b43ffcc00a2b3"
-                      >标记为<strong>私密</strong></a
-                    >
+                      href="/index.php/action/contents-post-edit?do=mark&status=private">标记为<strong>私密</strong></a>
                   </li>
                 </ul>
               </div>
@@ -214,4 +171,24 @@
     <!-- end .typecho-page-main -->
   </div>
 </div>
-{{include "layouts/foot"}} {{end}}
+{{include "layouts/foot"}}
+
+<script>
+  (function () {
+    $(document).ready(function () {
+      $('.typecho-list-table').tableSelectable({
+        checkEl: 'input[type=checkbox]',
+        rowEl: 'tr',
+        selectAllEl: '.typecho-table-select-all',
+        actionEl: '.dropdown-menu a,button.btn-operate'
+      });
+
+      $('.btn-drop').dropdownMenu({
+        btnEl: '.dropdown-toggle',
+        menuEl: '.dropdown-menu'
+      });
+    });
+  })();
+</script>
+
+{{end}}

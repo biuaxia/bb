@@ -115,7 +115,8 @@
                   <td class="kit-hidden-mb">
                     <a href="/admin/manage-posts.php?category=1">默认分类</a>
                   </td>
-                  <td>2天前</td>
+                  <td>CreatedAt:{{parseDateTime $content.CreatedAt}}, UpdatedAt:{{parseDateTime $content.UpdatedAt}}
+                  </td>
                 </tr>
                 {{end}}
               </tbody>
@@ -134,24 +135,19 @@
                 </button>
                 <ul class="dropdown-menu">
                   <li>
-                    <a lang="你确认要删除这些文章吗?"
-                      href="/index.php/action/contents-post-edit?do=delete">删除</a>
+                    <a lang="你确认要删除这些文章吗?" href="/index.php/action/contents-post-edit?do=delete">删除</a>
                   </li>
                   <li>
-                    <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=publish">标记为<strong>公开</strong></a>
+                    <a href="/index.php/action/contents-post-edit?do=mark&status=publish">标记为<strong>公开</strong></a>
                   </li>
                   <li>
-                    <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=waiting">标记为<strong>待审核</strong></a>
+                    <a href="/index.php/action/contents-post-edit?do=mark&status=waiting">标记为<strong>待审核</strong></a>
                   </li>
                   <li>
-                    <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=hidden">标记为<strong>隐藏</strong></a>
+                    <a href="/index.php/action/contents-post-edit?do=mark&status=hidden">标记为<strong>隐藏</strong></a>
                   </li>
                   <li>
-                    <a
-                      href="/index.php/action/contents-post-edit?do=mark&status=private">标记为<strong>私密</strong></a>
+                    <a href="/index.php/action/contents-post-edit?do=mark&status=private">标记为<strong>私密</strong></a>
                   </li>
                 </ul>
               </div>

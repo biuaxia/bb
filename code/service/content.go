@@ -66,3 +66,7 @@ func ViewContentByArchives(id uint) model.Content {
 func DelContent(ids ...int) {
 	dao.DeleteContent(ids...)
 }
+
+func AllContentTotal() int {
+	return dao.CountContent()
+}

@@ -74,3 +74,10 @@ func DeleteContent(ids ...int) {
 	tx.Commit()
 	zap.L().Debug("DeleteContent", zap.Any("ids", ids), zap.Any("contents", contents))
 }
+
+func CountContent() int {
+	var count int64
+	core.GormDB.Model(&model.Content{}).Count(&count)
+	zap.L().Debug("CountContent", zap.Int64("count", count))
+	return int(count)
+}

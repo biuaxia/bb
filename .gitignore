@@ -18,3 +18,4 @@ tmp/
 go.sum
 .idea/
 *.log
+dist/

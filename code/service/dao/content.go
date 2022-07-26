@@ -33,7 +33,7 @@ func QueryAllContentOmitText() ([]*model.Content, error) {
 		"created_at",
 		"updated_at",
 		"deleted_at",
-		"substring(`text`, 1, 255) as `text`",
+		"IF ( LOCATE( '<!--more-->', `text` ) > 0, SUBSTR(`text`,1 ,LOCATE( '<!--more-->', `text` )-1), `text` ) AS `text`", // 匹配编辑器的分割标识
 		"order",
 		"parent",
 		"authorId",

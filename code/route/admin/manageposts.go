@@ -1,16 +1,15 @@
 package admin
 
 import (
-	"net/http"
-
 	"biuaxia.cn/bb/code/service"
-	"github.com/foolin/goview/supports/ginview"
+	"biuaxia.cn/bb/code/web"
 	"github.com/gin-gonic/gin"
 )
 
 func ManagePosts(ctx *gin.Context) {
 	contents := service.GetAllContentOmitText("post")
-	ginview.HTML(ctx, http.StatusOK, "manage-posts", gin.H{
+	web.Template(ctx, "manage-posts", gin.H{
+		"name":     "管理文章",
 		"contents": contents,
 	})
 }

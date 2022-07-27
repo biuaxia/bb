@@ -13,6 +13,7 @@ func Index(ctx *gin.Context) {
 		OutLastContent: true,
 		OutPage:        true,
 	}.Template(ctx, "index", gin.H{
+		"name":     "首页",
 		"contents": contents,
 	})
 }

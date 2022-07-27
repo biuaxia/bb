@@ -1,11 +1,10 @@
 package admin
 
 import (
-	"net/http"
 	"strconv"
 
 	"biuaxia.cn/bb/code/service"
-	"github.com/foolin/goview/supports/ginview"
+	"biuaxia.cn/bb/code/web"
 	"github.com/gin-gonic/gin"
 )
 
@@ -13,7 +12,8 @@ func WritePage(ctx *gin.Context) {
 	// 检测是否有id携带
 	cid, ok := ctx.GetQuery("cid")
 	if !ok || cid == "" {
-		ginview.HTML(ctx, http.StatusOK, "write-page", gin.H{
+		web.Template(ctx, "write-page", gin.H{
+			"name":    "创建新页面",
 			"hasData": false,
 		})
 		return
@@ -21,16 +21,17 @@ func WritePage(ctx *gin.Context) {
 
 	id, err := strconv.Atoi(cid)
 	if err != nil {
-		ginview.HTML(ctx, http.StatusOK, "write-page", gin.H{
+		web.Template(ctx, "write-page", gin.H{
+			"name":    "创建新页面",
 			"hasData": false,
 		})
 		return
 	}
 
 	content := service.GetContent(uint(id))
-	ginview.HTML(ctx, http.StatusOK, "write-page", gin.H{
+	web.Template(ctx, "write-page", gin.H{
+		"name":    "编辑页面",
 		"hasData": true,
 		"content": content,
 	})
-	return
 }

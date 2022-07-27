@@ -1,7 +1,7 @@
 # dev info
 mode: info
-name: Hello World
-desc: Your description here.
+name: Biuaxia's blog
+desc: 一闪一闪的星，哪一颗是你的眼睛
 log:
   max_age: 30
   max_size: 100

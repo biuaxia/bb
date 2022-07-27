@@ -22,6 +22,7 @@ func ViewContentByArchives(c *gin.Context) {
 		OutLastContent: true,
 		OutPage:        true,
 	}.Template(c, "contentview", gin.H{
+		"name":    content.Title,
 		"content": content,
 	})
 }
@@ -38,6 +39,7 @@ func ViewPage(c *gin.Context) {
 		OutLastContent: true,
 		OutPage:        true,
 	}.Template(c, "pageview", gin.H{
+		"name":    content.Title,
 		"content": content,
 	})
 }

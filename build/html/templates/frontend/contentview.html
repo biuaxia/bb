@@ -2,19 +2,19 @@
 <div class="col-mb-12 col-8" id="main" role="main">
     <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
         <h1 class="post-title" itemprop="name headline">
-            <a itemprop="url" href="/index.php/archives/{{.content.id}}/">{{.content.title}}</a>
+            <a itemprop="url" href="/index.php/archives/{{.content.ID}}/">{{.content.Title}}</a>
         </h1>
         <ul class="post-meta">
             <li itemprop="author" itemscope itemtype="http://schema.org/Person">
-                作者: <a itemprop="name" href="/index.php/author/{{.content.authorId}}/"
-                    rel="author">{{.content.authorId}}</a>
+                作者: <a itemprop="name" href="/index.php/author/{{.content.AuthorId}}/"
+                    rel="author">{{.content.AuthorId}}</a>
             </li>
-            <li>时间: <time datetime="{{parseDate .content.createdAt}}" itemprop="datePublished">{{parseDate
-                    .content.createdAt}}</time>
+            <li>时间: <time datetime="{{parseDate .content.CreatedAt}}" itemprop="datePublished">{{parseDate
+                    .content.CreatedAt}}</time>
             </li>
             <li>分类: <a href="/index.php/category/default/">默认分类</a></li>
         </ul>
-        <div class="post-content" itemprop="articleBody">{{md2HTML .content.text}}</div>
+        <div class="post-content" itemprop="articleBody">{{md2HTML .content.Text}}</div>
         <p itemprop="keywords" class="tags">标签: none</p>
     </article>
 

@@ -1,16 +1,15 @@
 package admin
 
 import (
-	"net/http"
-
 	"biuaxia.cn/bb/code/service"
-	"github.com/foolin/goview/supports/ginview"
+	"biuaxia.cn/bb/code/web"
 	"github.com/gin-gonic/gin"
 )
 
 func ManagePages(ctx *gin.Context) {
 	contents := service.GetAllContentOmitText("page")
-	ginview.HTML(ctx, http.StatusOK, "manage-pages", gin.H{
+	web.Template(ctx, "manage-pages", gin.H{
+		"name":     "管理独立页面",
 		"contents": contents,
 	})
 }

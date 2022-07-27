@@ -27,8 +27,12 @@ func Err(c *gin.Context, httpCode int, code int, msg string, jsonStr any) {
 	})
 }
 
-func Template(c *gin.Context, name string, data any) {
-	ginview.HTML(c, http.StatusOK, "dashboard", data)
+func Template(c *gin.Context, name string, data gin.H) {
+	// 附加标题、描述
+	data["title"] = core.Conf.Name
+	data["desc"] = core.Conf.Desc
+
+	ginview.HTML(c, http.StatusOK, name, data)
 }
 
 func Redirect(c *gin.Context, location string) {
@@ -42,37 +46,24 @@ type TemplateOptions struct {
 }
 
 func (t TemplateOptions) Template(c *gin.Context, name string, data gin.H) {
-	marshal, _ := json.Marshal(data)
-	var res map[string]interface{}
-	_ = json.Unmarshal(marshal, &res)
-
-	zap.L().Debug("TemplateOptions.Template", zap.Any("t", t))
-
 	if t.OutLastContent {
 		contents := service.GetAllContentOmitText("post")
-		var val interface{}
-		m, _ := json.Marshal(contents)
-		json.Unmarshal(m, &val)
-		res["lastContent"] = val
+		data["lastContent"] = contents
 	}
 	if t.OutPage {
 		pages := service.GetAllContentOmitText("page")
-		var val interface{}
-		m, _ := json.Marshal(pages)
-		json.Unmarshal(m, &val)
-		res["pages"] = val
+		data["pages"] = pages
 	}
 	if t.OutConf {
 		marshal, _ := json.MarshalIndent(core.Conf, "", "    ")
-		res["conf"] = string(marshal)
+		data["conf"] = string(marshal)
 	}
 
-	h := gin.H{}
-	for k, v := range res {
-		h[k] = v
-	}
+	// 附加标题、描述
+	data["title"] = core.Conf.Name
+	data["desc"] = core.Conf.Desc
 
-	zap.L().Debug("TemplateOptions.Template", zap.Any("h", h))
+	zap.L().Debug("TemplateOptions.Template", zap.Any("data", data))
 
-	ginview.HTML(c, http.StatusOK, name, h)
+	ginview.HTML(c, http.StatusOK, name, data)
 }

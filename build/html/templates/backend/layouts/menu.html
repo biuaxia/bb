@@ -15,14 +15,10 @@
         var allNodeHref = $('#typecho-nav-list > ul a');
         $.map(allNodeHref, function (item, index) {
             var currenntNodeHref = $(item).attr('href');
-            if (currentHref.endsWith(currenntNodeHref) || currentHref.endsWith(currenntNodeHref + "/")) {
-                if ('parent' === $(item).parent().attr('class')) {
-                    // 上级元素
-                    $(item).parent().parent().addClass('focus');
-                } else {
-                    // 当前元素
-                    $(item).parent().addClass('focus');
-                }
+            if (currentHref.endsWith(currenntNodeHref) ||
+                currentHref.endsWith(currenntNodeHref + "/")) {
+                $(item).parent().addClass('focus');
+                $(item).parent().parent().parent().addClass('focus');
             }
         })
     }

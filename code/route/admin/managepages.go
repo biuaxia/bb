@@ -8,9 +8,9 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func ManagePosts(ctx *gin.Context) {
-	contents := service.GetAllContentOmitText("post")
-	ginview.HTML(ctx, http.StatusOK, "manage-posts", gin.H{
+func ManagePages(ctx *gin.Context) {
+	contents := service.GetAllContentOmitText("page")
+	ginview.HTML(ctx, http.StatusOK, "manage-pages", gin.H{
 		"contents": contents,
 	})
 }

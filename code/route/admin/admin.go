@@ -9,7 +9,7 @@ import (
 )
 
 func Index(ctx *gin.Context) {
-	allContentTotal := service.AllContentTotal()
+	allContentTotal := service.AllContentTotal("post")
 	ginview.HTML(ctx, http.StatusOK, "index", gin.H{
 		"allContentTotal": allContentTotal,
 	})

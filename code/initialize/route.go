@@ -139,6 +139,7 @@ func Router() {
 	AdminGroup()
 	OpenapiGroup()
 	DispatcherGroup()
+	zap.L().Info("初始化路由完成")
 }
 
 func IndexGroup() {
@@ -154,6 +155,7 @@ func IndexGroup() {
 	indexGroup.GET("/", index.Index)
 	indexGroup.GET("/index.php", index.Index)
 
+	indexGroup.GET("/index.php/:id", index.ViewPage)
 	indexGroup.GET("/index.php/archives/:id", index.ViewContentByArchives)
 }
 
@@ -177,8 +179,14 @@ func AdminGroup() {
 		adminGroup.GET("/write-post", admin.WritePost)
 		adminGroup.GET("/write-post.php", admin.WritePost)
 
+		adminGroup.GET("/write-page", admin.WritePage)
+		adminGroup.GET("/write-page.php", admin.WritePage)
+
 		adminGroup.GET("/manage-posts", admin.ManagePosts)
 		adminGroup.GET("/manage-posts.php", admin.ManagePosts)
+
+		adminGroup.GET("/manage-pages", admin.ManagePages)
+		adminGroup.GET("/manage-pages.php", admin.ManagePages)
 	}
 }
 
@@ -209,5 +217,6 @@ func ActionGroup(rg *gin.RouterGroup) {
 
 	{
 		r.POST("/contents-post-edit", action.ContentsPostEdit)
+		r.POST("/contents-page-edit", action.ContentsPageEdit)
 	}
 }

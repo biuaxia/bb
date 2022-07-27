@@ -21,16 +21,16 @@ func UpdateContent(c *model.Content) (uint, error) {
 	return c.ID, result.Error
 }
 
-func QueryAllContent() ([]model.Content, error) {
+func QueryAllContent(typeStr string) ([]model.Content, error) {
 	var contents []model.Content
-	result := core.GormDB.Order("id desc").Order("`order`").Find(&contents)
+	result := core.GormDB.Where("type = ?", typeStr).Order("id desc").Order("`order`").Find(&contents)
 	zap.L().Debug("QueryAllContent", zap.Any("contents", contents), zap.Any("result", result))
 	return contents, result.Error
 }
 
-func QueryAllContentOmitText() ([]*model.Content, error) {
+func QueryAllContentOmitText(typeStr string) ([]*model.Content, error) {
 	var contents []*model.Content
-	result := core.GormDB.Select("id",
+	result := core.GormDB.Where("type = ?", typeStr).Select("id",
 		"created_at",
 		"updated_at",
 		"deleted_at",
@@ -75,9 +75,9 @@ func DeleteContent(ids ...int) {
 	zap.L().Debug("DeleteContent", zap.Any("ids", ids), zap.Any("contents", contents))
 }
 
-func CountContent() int {
+func CountContent(typeStr string) int {
 	var count int64
-	core.GormDB.Model(&model.Content{}).Count(&count)
+	core.GormDB.Model(&model.Content{}).Where("type = ?", typeStr).Count(&count)
 	zap.L().Debug("CountContent", zap.Int64("count", count))
 	return int(count)
 }

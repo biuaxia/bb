@@ -7,10 +7,11 @@ import (
 )
 
 func Index(ctx *gin.Context) {
-	contents := service.GetAllContentOmitText()
+	contents := service.GetAllContentOmitText("post")
 
 	web.TemplateOptions{
 		OutLastContent: true,
+		OutPage:        true,
 	}.Template(ctx, "index", gin.H{
 		"contents": contents,
 	})

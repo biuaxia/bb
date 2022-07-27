@@ -73,3 +73,23 @@ type ContentsPostEditForm struct {
 	Do           string `form:"do" json:"do"`
 	Timezone     string `form:"timezone" json:"timezone"`
 }
+
+type ContentsPageEditForm struct {
+	Title        string `form:"title" json:"title"`
+	Slug         string `form:"slug" json:"slug"`
+	Text         string `form:"text" json:"text"`
+	FieldNames   string `form:"fieldNames" json:"fieldNames"`
+	FieldTypes   string `form:"fieldTypes" json:"fieldTypes"`
+	FieldValues  string `form:"fieldValues" json:"fieldValues"`
+	Cid          string `form:"cid" json:"cid"`
+	Markdown     string `form:"markdown" json:"markdown"`
+	Date         string `form:"date" json:"date"`
+	Order        string `form:"order" json:"order"`
+	Template     string `form:"template" json:"template"`
+	Visibility   string `form:"visibility" json:"visibility"`
+	AllowComment string `form:"allowComment" json:"allowComment"`
+	AllowPing    string `form:"allowPing" json:"allowPing"`
+	AllowFeed    string `form:"allowFeed" json:"allowFeed"`
+	Do           string `form:"do" json:"do"`
+	Timezone     string `form:"timezone" json:"timezone"`
+}

@@ -53,7 +53,7 @@ var (
 				},
 				{
 					Name: "创建页面",
-					Href: "/admin/manage-page",
+					Href: "/admin/write-page",
 				},
 			},
 		},

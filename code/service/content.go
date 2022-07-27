@@ -28,8 +28,8 @@ func RenewContent(cf *model.ContentForm) {
 	zap.L().Debug("RenewContent", zap.Uint("id", id))
 }
 
-func GetAllContent() []model.ContentForm {
-	contents, err := dao.QueryAllContent()
+func GetAllContent(typeStr string) []model.ContentForm {
+	contents, err := dao.QueryAllContent(typeStr)
 	if err != nil {
 		zap.L().Error("查询出错", zap.Error(err))
 		return nil
@@ -44,8 +44,8 @@ func GetAllContent() []model.ContentForm {
 	return forms
 }
 
-func GetAllContentOmitText() []*model.ContentForm {
-	contents, err := dao.QueryAllContentOmitText()
+func GetAllContentOmitText(typeStr string) []*model.ContentForm {
+	contents, err := dao.QueryAllContentOmitText(typeStr)
 	if err != nil {
 		zap.L().Error("查询出错", zap.Error(err))
 		return nil
@@ -79,6 +79,6 @@ func DelContent(ids ...int) {
 	dao.DeleteContent(ids...)
 }
 
-func AllContentTotal() int {
-	return dao.CountContent()
+func AllContentTotal(typeStr string) int {
+	return dao.CountContent(typeStr)
 }

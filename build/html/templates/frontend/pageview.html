@@ -1,0 +1,32 @@
+{{ define "content"}}
+<div class="col-mb-12 col-8" id="main" role="main">
+    <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 class="post-title" itemprop="name headline">
+            <a itemprop="url" href="/index.php/{{.content.id}}/">{{.content.title}}</a>
+        </h1>
+        <div class="post-content" itemprop="articleBody">{{md2HTML .content.text}}</div>
+    </article>
+    <div id="comments">
+        <div id="respond-page-2" class="respond">
+            <div class="cancel-comment-reply">
+                <a id="cancel-comment-reply-link" href="/index.php/start-page.html#respond-page-2" rel="nofollow"
+                    style="display:none" onclick="return TypechoComment.cancelReply();">取消回复</a>
+            </div>
+            <h3 id="response">添加新评论</h3>
+            <form method="post" action="/index.php/start-page.html/comment" id="comment-form" role="form">
+                <p>登录身份: <a href="/admin/profile.php">biuaxia</a>. <a
+                        href="/index.php/action/logout?_=081637d5e0b69239ffa6de6dd0e64e1c" title="Logout">退出 &raquo;</a>
+                </p>
+                <p>
+                    <label for="textarea" class="required">内容</label>
+                    <textarea rows="8" cols="50" name="text" id="textarea" class="textarea" required></textarea>
+                </p>
+                <p>
+                    <button type="submit" class="submit">提交评论</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</div><!-- end #main-->
+
+{{end}}

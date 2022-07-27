@@ -1,4 +1,6 @@
 mode: dev
+name: Hello World
+desc: Your description here.
 log:
   max_age: 30
   max_size: 100

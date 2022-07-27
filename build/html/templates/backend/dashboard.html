@@ -7,43 +7,10 @@
             <h2>仪表盘 | dashboard</h2>
         </div>
         <div class="row typecho-page-main">
-            <div class="col-mb-12 col-tb-4" role="complementary">
+            <div class="col-mb-12 col-tb-12" role="complementary">
                 <section class="latest-link">
-                    <h3>Mysql基本信息</h3>
-                    <ul>
-                        <li>port: {{.port}}</li>
-                        <li>host: {{.host}}</li>
-                        <li>schema: {{.schema}}</li>
-                        <li>charset: {{.charset}}</li>
-                        <li>username: {{.username}}</li>
-                        <li>password: {{.password}}</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="col-mb-12 col-tb-4" role="complementary">
-                <section class="latest-link">
-                    <h3>信息面板二</h3>
-                    <ul>
-                        <li>port: {{.port}}</li>
-                        <li>host: {{.host}}</li>
-                        <li>schema: {{.schema}}</li>
-                        <li>charset: {{.charset}}</li>
-                        <li>username: {{.username}}</li>
-                        <li>password: {{.password}}</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="col-mb-12 col-tb-4" role="complementary">
-                <section class="latest-link">
-                    <h3>信息面板三</h3>
-                    <ul>
-                        <li>port: {{.port}}</li>
-                        <li>host: {{.host}}</li>
-                        <li>schema: {{.schema}}</li>
-                        <li>charset: {{.charset}}</li>
-                        <li>username: {{.username}}</li>
-                        <li>password: {{.password}}</li>
-                    </ul>
+                    <h3>配置文件</h3>
+                    <pre>{{.conf}}</pre>
                 </section>
             </div>
         </div>

@@ -48,12 +48,13 @@ type IModel struct {
 	DeletedAt gorm.DeletedAt `form:"deletedAt" gorm:"index;type:datetime(3);column:deleted_at;comment:删除时间"`
 }
 
-func (imodel *IModel) ConvertToForm() (f *IForm) {
+func (imodel *IModel) ConvertToForm() *IForm {
+	f := new(IForm)
 	f.ID = fmt.Sprint(imodel.ID)
 	loc, _ := time.LoadLocation("Local")
 	// loc, _ := time.LoadLocation("Asia/Shanghai")
 
 	f.CreatedAt = imodel.CreatedAt.In(loc).Format(core.LOCALDATETIME_FORMAT_LAYOUT)
 	f.UpdatedAt = imodel.UpdatedAt.In(loc).Format(core.LOCALDATETIME_FORMAT_LAYOUT)
-	return
+	return f
 }

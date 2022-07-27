@@ -96,19 +96,24 @@ func allMenu() template.HTML {
 	return template.HTML(strings.Join(outStr, "\r\n\t\t"))
 }
 
-func parseTime(t time.Time) string {
+func parseTime(ts string) string {
+	t := core.ParseLocalDateTime(ts)
 	return t.Format(core.LOCALTIME_FORMAT_LAYOUT)
 }
-func parseDate(t time.Time) string {
+func parseDate(ts string) string {
+	t := core.ParseLocalDateTime(ts)
 	return t.Format(core.LOCALDATE_FORMAT_LAYOUT)
 }
-func parseDateTime(t time.Time) string {
+func parseDateTime(ts string) string {
+	t := core.ParseLocalDateTime(ts)
 	return t.Format(core.LOCALDATETIME_FORMAT_LAYOUT)
 }
-func parseDateTimeMinute(t time.Time) string {
+func parseDateTimeMinute(ts string) string {
+	t := core.ParseLocalDateTime(ts)
 	return t.Format(core.LOCALDATETIME_MINUTE_FORMAT_LAYOUT)
 }
-func parseDateTimeMillsecond(t time.Time) string {
+func parseDateTimeMillsecond(ts string) string {
+	t := core.ParseLocalDateTime(ts)
 	return t.Format(core.LOCALDATETIME_MILLSECOND_FORMAT_LAYOUT)
 }
 

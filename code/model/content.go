@@ -21,6 +21,18 @@ func (c *Content) ConvertToForm() (cf ContentForm) {
 	imodel := c.IModel
 	iform := imodel.ConvertToForm()
 	cf.IForm = *iform
+	if c.AuthorId != 0 {
+		cf.AuthorId = fmt.Sprint(c.AuthorId)
+	}
+	cf.Order = fmt.Sprint(c.Order)
+	cf.Parent = fmt.Sprint(c.Parent)
 	cf.AuthorId = fmt.Sprint(c.AuthorId)
+	cf.Title = c.Title
+	cf.Text = c.Text
+	cf.Template = c.Template
+	cf.Types = c.Types
+	cf.Status = c.Status
+	cf.Password = c.Password
+
 	return
 }

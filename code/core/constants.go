@@ -6,22 +6,24 @@ const (
 	DEFAULT_CONF_FILE_PATH = "build/conf/bb.yaml"
 
 	LOCALDATE_FORMAT_LAYOUT = "2006-01-02"
-	LOCALDATE_RE_LAYOUT     = `\d+-\d+-\d+`
+	LOCALDATE_RE_LAYOUT     = `^\d+-\d+-\d+$`
 
 	LOCALTIME_FORMAT_LAYOUT = "15:04:05"
-	LOCALTIME_RE_LAYOUT     = `\d+:\d+:\d+`
+	LOCALTIME_RE_LAYOUT     = `^\d+:\d+:\d+$`
 
 	LOCALDATETIME_FORMAT_LAYOUT = "2006-01-02 15:04:05"
-	LOCALDATETIME_RE_LAYOUT     = `\d+-\d+-\d+ \d+:\d+:\d+`
+	LOCALDATETIME_RE_LAYOUT     = `^\d+-\d+-\d+ \d+:\d+:\d+$`
 
 	LOCALDATETIME_MINUTE_FORMAT_LAYOUT = "2006-01-02 15:04"
-	LOCALDATETIME_MINUTE_RE_LAYOUT     = `\d+-\d+-\d+ \d+:\d+`
+	LOCALDATETIME_MINUTE_RE_LAYOUT     = `^\d+-\d+-\d+ \d+:\d+$`
 
 	LOCALDATETIME_MILLSECOND_FORMAT_LAYOUT = "2006-01-02 15:04:05.000"
-	LOCALDATETIME_MILLSECOND_RE_LAYOUT     = `\d+-\d+-\d+ \d+:\d+:\d+\.\d+`
+	LOCALDATETIME_MILLSECOND_RE_LAYOUT     = `^\d+-\d+-\d+ \d+:\d+:\d+\.\d+$`
 )
 
 var (
+	LOCALDATE_RE                = regexp.MustCompile(LOCALDATE_RE_LAYOUT)
+	LOCALTIME_RE                = regexp.MustCompile(LOCALTIME_RE_LAYOUT)
 	LOCALDATETIME_RE            = regexp.MustCompile(LOCALDATETIME_RE_LAYOUT)
 	LOCALDATETIME_MINUTE_RE     = regexp.MustCompile(LOCALDATETIME_MINUTE_RE_LAYOUT)
 	LOCALDATETIME_MILLSECOND_RE = regexp.MustCompile(LOCALDATETIME_MILLSECOND_FORMAT_LAYOUT)

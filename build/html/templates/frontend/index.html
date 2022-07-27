@@ -3,16 +3,16 @@
   {{range $i, $c := .contents}}
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     <h2 class="post-title" itemprop="name headline">
-      <a itemprop="url" href="/index.php/archives/{{$c.ID}}/">{{$c.Title}}</a>
+      <a itemprop="url" href="/index.php/archives/{{$c.id}}/">{{$c.title}}</a>
     </h2>
     <ul class="post-meta">
       <li itemprop="author" itemscope itemtype="http://schema.org/Person">
         作者:
-        <a itemprop="name" href="/index.php/author/{{$c.AuthorId}}/" rel="author">{{$c.AuthorId}}</a>
+        <a itemprop="name" href="/index.php/author/{{$c.authorId}}/" rel="author">{{$c.authorId}}</a>
       </li>
       <li>
         时间:
-        <time datetime="{{$c.CreatedAt}}" itemprop="datePublished">{{parseDateTimeMinute $c.CreatedAt}}</time>
+        <time datetime="{{$c.createdAt}}" itemprop="datePublished">{{parseDateTimeMinute $c.createdAt}}</time>
       </li>
       <li>
         分类:
@@ -22,7 +22,7 @@
         <a itemprop="discussionUrl" href="/index.php/archives/1/#comments">1 条评论</a>
       </li>
     </ul>
-    <div class="post-content" itemprop="articleBody">{{md2HTML $c.Text}}</div>
+    <div class="post-content" itemprop="articleBody">{{md2HTML $c.text}}</div>
   </article>
   {{end}}
 </div>

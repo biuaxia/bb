@@ -1,16 +1,17 @@
 package index
 
 import (
-	"net/http"
-
 	"biuaxia.cn/bb/code/service"
-	"github.com/foolin/goview/supports/ginview"
+	"biuaxia.cn/bb/code/web"
 	"github.com/gin-gonic/gin"
 )
 
 func Index(ctx *gin.Context) {
 	contents := service.GetAllContentOmitText()
-	ginview.HTML(ctx, http.StatusOK, "index", gin.H{
+
+	web.TemplateOptions{
+		OutLastContent: true,
+	}.Template(ctx, "index", gin.H{
 		"contents": contents,
 	})
 }

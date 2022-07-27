@@ -2,6 +2,8 @@ package core
 
 type AppConfig struct {
 	Mode        string
+	Name        string
+	Desc        string
 	MySQLConfig *MySQLConfig `mapstructure:"mysql"`
 	LogConfig   *LogConfig   `mapstructure:"log"`
 }

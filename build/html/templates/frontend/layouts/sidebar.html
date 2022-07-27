@@ -6,7 +6,7 @@
   <section class="widget">
     <h3 class="widget-title">最新文章</h3>
     <ul class="widget-list">
-      {{range $i, $c := .contents}}
+      {{range $i, $c := .lastContent}}
       <li><a href="/index.php/archives/{{$c.ID}}/">{{$c.Title}}</a></li>
       {{end}}
     </ul>

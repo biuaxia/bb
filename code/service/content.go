@@ -28,38 +28,50 @@ func RenewContent(cf *model.ContentForm) {
 	zap.L().Debug("RenewContent", zap.Uint("id", id))
 }
 
-func GetAllContent() []model.Content {
+func GetAllContent() []model.ContentForm {
 	contents, err := dao.QueryAllContent()
 	if err != nil {
 		zap.L().Error("查询出错", zap.Error(err))
 		return nil
 	}
-	zap.L().Debug("GetAllContent", zap.Any("contents", contents))
-	return contents
+
+	var forms []model.ContentForm
+	for _, content := range contents {
+		forms = append(forms, content.ConvertToForm())
+	}
+	zap.L().Debug("GetAllContent", zap.Any("forms", forms))
+
+	return forms
 }
 
-func GetAllContentOmitText() []*model.Content {
+func GetAllContentOmitText() []*model.ContentForm {
 	contents, err := dao.QueryAllContentOmitText()
 	if err != nil {
 		zap.L().Error("查询出错", zap.Error(err))
 		return nil
 	}
 
-	zap.L().Debug("GetAllContent", zap.Any("contents", contents))
-	return contents
+	var forms []*model.ContentForm
+	for _, content := range contents {
+		form := content.ConvertToForm()
+		forms = append(forms, &form)
+	}
+	zap.L().Debug("GetAllContent", zap.Any("forms", forms))
+
+	return forms
 }
 
-func GetContent(id uint) model.Content {
+func GetContent(id uint) model.ContentForm {
 	content, err := dao.QueryContent(id)
 	if err != nil {
 		zap.L().Error("查询出错", zap.Error(err))
-		return model.Content{}
+		return model.ContentForm{}
 	}
 	zap.L().Debug("GetContent", zap.Any("content", content))
-	return content
+	return content.ConvertToForm()
 }
 
-func ViewContentByArchives(id uint) model.Content {
+func ViewContentByArchives(id uint) model.ContentForm {
 	return GetContent(id)
 }
 

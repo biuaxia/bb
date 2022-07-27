@@ -34,5 +34,4 @@ func WritePost(ctx *gin.Context) {
 		"hasData": true,
 		"content": content,
 	})
-	return
 }

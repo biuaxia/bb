@@ -14,7 +14,7 @@
       </div>
       <div class="col-mb-12">
         <nav id="nav-menu" class="clearfix" role="navigation">
-          <a class="current" href="/">首页</a>
+          <a href="/">首页</a>
           {{range $i, $c := .pages}}
           <a href="/index.php/{{$c.ID}}" title="{{$c.Title}}">{{$c.Title}}</a>
           {{end}}
@@ -25,3 +25,17 @@
   </div>
 </header>
 <!-- end #header -->
+
+<script>
+  window.onload = function () {
+    var currentHref = window.location.href;
+    var allNodeHref = $('#nav-menu > a');
+    $.map(allNodeHref, function (item, index) {
+      var currenntNodeHref = $(item).attr('href');
+      if (currentHref.endsWith(currenntNodeHref) ||
+        currentHref.endsWith(currenntNodeHref + "/")) {
+        $(item).addClass('current');
+      }
+    })
+  }
+</script>

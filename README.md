@@ -5,57 +5,57 @@
 ---
 首页
 
-![首页](./md/index.jpeg)
+![首页](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rGSzd3OlNibLrIKANM5tqkSZUHQxXgdRC7w/0)
 
 ---
 文章浏览
 
-![文章浏览](./md/archives-id.jpeg)
+![文章浏览](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rJqvDnM5Cm4S7l6qWBq1KiahHGkjcLrvPsw/0)
 
 ---
 独立页面浏览
 
-![独立页面浏览](./md/page.jpeg)
+![独立页面浏览](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rJFKHRO6sWdDdXYljIgEpo9EiaDrDoiaeNGA/0)
 
 ---
 后台首页
 
-![后台首页](./md/admin.jpeg)
+![后台首页](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rIRp3DEDvvvrjw1ibdLicU1GdegiadHYvXYUg/0)
 
 ---
 仪表盘
 
-![仪表盘](./md/dashboard.jpeg)
+![仪表盘](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rOCwxzZIqayztrZqGusUxyIWFKpibM9SPEA/0)
 
 ---
 管理文章
 
-![管理文章](./md/manage-posts.jpeg)
+![管理文章](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rJW3KuOG9Feo1wh4JeusIyl2oVc4dsFqCw/0)
 
 ---
 新建文章
 
-![新建文章](./md/write-post.jpeg)
+![新建文章](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rMOAib3o3HSqAqUOBgsbudXeD68icQ4iavM1A/0)
 
 ---
 编辑文章
 
-![编辑文章](./md/write-post-id.jpeg)
+![编辑文章](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rLlMVWLpxYV4ibwKp05T23uZ9AQgvgd1o0Q/0)
 
 ---
 管理页面
 
-![管理页面](./md/manage-pages.jpeg)
+![管理页面](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rE8NjSOk4mKE81JMs0fbzO5ia5OZMqfJdGg/0)
 
 ---
 新建页面
 
-![新建页面](./md/write-page.jpeg)
+![新建页面](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rJpajmgZ6GyWqQVM97ibES1eH9dWBlENfaQ/0)
 
 ---
 编辑页面
 
-![编辑页面](./md/write-page-id.jpeg)
+![编辑页面](https://puep.qpic.cn/coral/Q3auHgzwzM4fgQ41VTF2rJjMiaKwa0Vl0IlWOUUxjjtAZeAF6FCEeicA/0)
 
 ## 发版说明
 

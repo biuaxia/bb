@@ -1,5 +1,62 @@
 # bb
 
+## 界面展示
+
+---
+首页
+
+![首页](./md/index.jpeg)
+
+---
+文章浏览
+
+![文章浏览](./md/archives-id.jpeg)
+
+---
+独立页面浏览
+
+![独立页面浏览](./md/page.jpeg)
+
+---
+后台首页
+
+![后台首页](./md/admin.jpeg)
+
+---
+仪表盘
+
+![仪表盘](./md/dashboard.jpeg)
+
+---
+管理文章
+
+![管理文章](./md/manage-posts.jpeg)
+
+---
+新建文章
+
+![新建文章](./md/write-post.jpeg)
+
+---
+编辑文章
+
+![编辑文章](./md/write-post-id.jpeg)
+
+---
+管理页面
+
+![管理页面](./md/manage-pages.jpeg)
+
+---
+新建页面
+
+![新建页面](./md/write-page.jpeg)
+
+---
+编辑页面
+
+![编辑页面](./md/write-page-id.jpeg)
+
 ## 发版说明
 
 ### 未安装 [goreleaser](https://goreleaser.com/install/)
